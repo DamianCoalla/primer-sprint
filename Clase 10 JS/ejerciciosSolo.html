@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /* Se ingresan por teclado tres números, si todos los valores ingresados son menores a 10,
+                imprimir en la página la leyenda ' Todos los números son menores a diez'. */
+
+    /*  let valor1 = 0;
+                  let valor2 = 0;
+                  let valor3 = 0;
+
+                  valor1 = +prompt("ingrese un numero ");
+                  valor2 = +prompt("ingrese otro numero ");
+                  valor3 = +prompt("ingrese un terncer valor");
+
+                  if (valor1 < 10 && valor2 < 10 && valor3 < 10) {
+                    console.log("todos los numeros son menores a 10");
+                  } else {
+                    console.log("algunos de los valores es mayor a 10");
+                  } */
+
+    /*  Realizar un programa que pida cargar una fecha cualquiera,
+                  luego verificar si dicha fecha corresponde a Navidad
+                  (se debe cargar por separado el día, el mes y el año) */
+
+    /*  let dia = +prompt("ingrese el dia");
+                  let mes = +prompt("ingrese mes");
+                  let anio = +prompt("ingrese anio");
+
+                  if (dia == 25 && mes == 12) {
+                    console.log("es navidad en el anio " + anio);
+                  } else {
+                    console.log("no es navidad");
+                  } */
+
+    /*     Se ingresan tres valores por teclado,
+                  si todos son iguales se imprime la suma del primero con el segundo
+                  y a este resultado se lo multiplica por el tercero
+                   (tener en cuenta que puede haber tres condiciones simples).
+                  En el caso que no sean iguales, solo indica que los números no son iguales */
+
+    /*  let valor1 = +prompt("ingrese primer valor");
+           let valor2 = +prompt("ingrese segundo valor");
+           let valor3 = +prompt("ingrese tercer valor");
+
+           if (valor1 == valor2 && valor2 == valor3) {
+             console.log((valor1 + valor2) * valor3);
+           } else {
+             console.log("lo valores ingresados no son iguales");
+           } */
+
+    /*   Se ingresan por teclado tres números, si todos los valores ingresados son menores a 10,
+           imprimir en la página la leyenda ' Todos los números son menores a diez'. */
+
+    /*   let valor1 = +prompt("ingrese el primer valor");
+           let valor2 = +prompt("ingrese el segundo valor");
+           let valor3 = +prompt("ingrese el tercer valor");
+
+           if (valor1 < 10 && valor2 < 10 && valor3 < 10) {
+             console.log("Todos los números son menores a diez");
+           } else {
+             console.log("al menos un nro es mayor a 10");
+           } */
+
+    /*     Escribir un programa que pida ingresar la coordenada de un punto en el plano,
+           es decir dos valores enteros x e y. Posteriormente imprimir en pantalla en qué cuadrante
+           se ubica dicho punto. (1º Cuadrante si x > 0 Y y > 0 , 2º Cuadrante: x < 0 Y y > 0, etc.) */
+
+    /*  let coordenadaX = +prompt("ingrese el valor de la coordenada X");
+           let coordenadaY = +prompt("ingrese el valor de la coordenada Y");
+
+           if (coordenadaX > 0 && coordenadaY > 0) {
+             console.log("estas en el primer cuadrante");
+           }
+           if (coordenadaX < 0 && coordenadaY < 0) {
+             console.log("estas en el segundo cuadrante");
+           } else {
+             console.log("estas en cualquier lado");
+           } */
+
+    /*  De un operario se conoce su sueldo y los años de antigüedad. Se pide confeccionar un programa
+           que lea los datos de entrada e informe
+        a. Si el sueldo es inferior a 500 y su antigüedad es igual o superior a 10 años,
+           otorgarle un aumento del 20 %, mostrar el sueldo a pagar.
+        b. Si el sueldo es inferior a 500 pero su antigüedad es menor a 10 años,
+           otorgarle un aumento de 5 %.
+        c. Si el sueldo es mayor o igual a 500 mostrar el sueldo en la página sin cambios. */
+    /*
+        let nombre = prompt("ingrese nombre del operario");
+        let sueldo = +prompt("ingrese sueldo");
+        let antiguedad = +prompt("ingrese antiguedad");
+
+        if (sueldo < 500 && antiguedad >= 10) {
+          sueldo = sueldo * 1.2;
+          console.log("el nuevo sueldo de " + nombre + "es : " + sueldo);
+        }
+
+        if (sueldo < 500 && antiguedad < 10) {
+          sueldo = sueldo * 1.05;
+          console.log("el nuevo sueldo de " + nombre + "es de " + sueldo);
+        } else sueldo >= 500;
+        {
+          console.log("el sueldo no tiene aumento");
+        } */
+
+    /*  Se ingresan tres notas de un alumno, si el promedio es mayor o igual a siete mostrar el mensaje
+        'Promocionado'. Tener en cuenta que para obtener el promedio debemos
+        operar suma=nota1+nota2+nota3; y luego hacer promedio=suma/3;
+        Cuando cargamos una nota y queremos convertir inmediatamente el valor ingresado a entero
+        podemos hacer:
+        nota1=prompt('Ingrese primer nota:','');
+        nota1=parseInt(nota1);
+        O en forma más corta: 	nota1=parseInt(prompt('Ingrese primer nota:','')); */
+
+    /*   let nota1 = parseInt(prompt("ingrese la primer nota"));
+        let nota2 = parseInt(prompt("ingrese la segunda nota"));
+        let nota3 = parseInt(prompt("ingrese la tercer nota"));
+        let suma = nota1 + nota2 + nota3;
+        let promedio = suma / 3;
+
+        if (promedio >= 7) {
+          console.log("promocionado");
+        } else {
+          console.log("no aprobado");
+        } */
+
+    /*  Solicitar que se ingrese dos veces una clave. Mostrar un mensaje si son iguales
+        (tener en cuenta que para ver si dos variables tienen el mismo valor almacenado debemos
+        utilizar el operador ==) */
+
+    /*   let clave1 = prompt("ingrese su clave");
+        let clave2 = prompt("ingrese su clave de nuevo");
+
+        if (clave1 == clave2) {
+          console.log("son iguales");
+        } else {
+          console.log("mal");
+        } */
+
+    /*  Realizar un programa que lea por teclado dos números,
+        si el primero es mayor al segundo informar su suma y diferencia,
+        en caso contrario informar el producto y la división del primero respecto al segundo. */
+
+    /*   let numero1 = +prompt("ingrese primer numero");
+        let numero2 = +prompt("ingrese segudno numero");
+
+        if (numero1 > numero2) {
+          console.log(numero1 + numero2);
+          console.log(numero1 - numero2);
+        }
+        if (numero1 < numero2) {
+          console.log(numero1 * numero2);
+          console.log(numero1 / numero2);
+        } */
+
+    /* Realizar un programa que imprima 25 términos
+        de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado). */
+
+    /*   let valor = 11;
+        for (let index = 0; index < 25; index++) {
+          console.log(valor);
+          valor = valor + 11;
+        } */
+
+    /*  Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 -16 -24, etc. */
+    /*
+        let valor = 8;
+        for (let index = 0; index < 62; index++) {
+          console.log(valor);
+          valor = valor + 8;
+        } */
+
+    /* Escribir un programa que lea 10 notas de alumnos
+        y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores. */
+    /* 
+    let notas7oMas = 0;
+    let notas6oMenos = 0;
+
+    for (let i = 0; index < 10; i++) {
+      let nota = +prompt("ingrese nota de alumno" + (i + 1));
+      if (nota >= 7) {
+        nota7oMas++;
+      } else {
+        nota6oMenos++;
+      }
+    }
+
+    console.log(
+      "La cantidad de estudiantes con notas mayores o iguales a 7 es " +
+        notas7oMas
+    );
+    console.log(
+      "La cantidad de estudiantes con notas menores a 7 es " + notas6oMenos
+    ); */
+
+    /* Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50). */
+
+    /*   let valor = 0;
+    for (let i = 0; i < 10; i++) {
+      valor = valor + 5;
+      console.log(valor);
+    } */
+
+    /*   Confeccionar un programa que permita ingresar un valor del 1 al 10 y nos muestre la tabla 
+    de multiplicar del mismo (los primeros 12 términos)
+Ejemplo: Si ingreso 3 deberá aparecer en pantalla los valores 3, 6, 9, hasta el 36. */
+
+    /*  let valor = +prompt("ingrese un numero del 1 al 10");
+    let tabla = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+    for (let i = 0; i < tabla.length; i++) {
+      valor = valor + tabla[i];
+      console.log(valor);
+    } */
+
+    /*  let tabla = parseInt(prompt("Ingrese un valor del 1 al 10:", ""));
+    let contador = tabla;
+
+    for (let i = 0; i < 12; i++) {
+      console.log(contador + " ");
+      contador = contador + tabla;
+    } */
+    /*  Confeccionar un programa que lea 3 pares de datos, cada par de datos corresponde 
+    a la medida de la base y la altura de un triángulo. El programa deberá informar:
+
+De cada triángulo la medida de su base, su altura y su superficie.
+La cantidad de triángulos cuya superficie es mayor a 12. */
+
+    /*     let base = 0;
+    let altura = 0;
+    let superficie = 0;
+    let superficieMayor12 = 0;
+
+    for (let i = 0; i < 3; i++) {
+      base = +prompt("ingrese la base en cm del triangulo" + (i + 1));
+      altura = +prompt("ingrese la altura en cm" + (i + 1));
+      let superficie = (base * altura) / 2;
+
+      console.log(
+        "la base del T es" +
+          base +
+          "la altura de T es " +
+          altura +
+          " la superficie del triangulo es de " +
+          superficie
+      );
+
+      if (superficie > 12) {
+        /*         superficieMayor12++;
+         */
+    /*      superficieMayor12 = superficieMayor12 + 1;
+      }
+    }
+
+    console.log(
+      "la cantidad de triangulos mayores a 12 es de " + superficieMayor12
+    ); */
+
+    /*  Desarrollar un programa que solicite la carga de 10 números e imprima la suma de los 
+    últimos 5 valores ingresados. */
+
+    /*  let numeros = [];
+     for (let i = 0; i < 10; i++) {
+       let numero = +prompt("Ingrese el número " + (i+1));
+       numeros.push(numero);
+    }
+    
+      let suma = 0;
+    
+      for (let i2 = 5; i2 < 10; i2++) {
+        suma += numeros[i2];
+    }
+    
+    console.log ("La suma de los últimos 5 números ingresasos es " + suma); */
+
+    /* let numeros = [];
+    let suma = 0;
+
+    for (let i = 0; i < 10; i++) {
+      let valores = +prompt("ingrese el valor del numero " + (i + 1));
+      numeros.push(valores);
+      suma = numeros[5] + numeros[6] + numeros[7] + numeros[8] + numeros[9];
+    }
+    console.log(suma); */
+    /* const numeros = [];
+    let suma = 0;
+
+    for (let i = 0; i < 10; i++) {
+      numeros.push(parseInt(prompt("Ingrese el numero " + (i + 1))));
+      suma = numeros[5] + numeros[6] + numeros[7] + numeros[8] + numeros[9];
+    }
+    console.log(suma); */
+
+    /*  Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50) */
+
+    /*   for (let i = 1; i <= 10; i++) {
+      let numero = i * 5;
+      console.log(numero);
+    } */
+    /* 
+    Confeccionar un programa que permita ingresar un valor del 1 al 10 y nos muestre la tabla de multiplicar del mismo (los primeros 12 términos)
+Ejemplo: Si ingreso 3 deberá aparecer en pantalla los valores 3, 6, 9, hasta el 36. */
+
+    /*    let valor = +prompt("ingrese un valor entre 1 y 10");
+
+    for (let i = 1; i <= 12; i++) {
+      let tabla = valor * i;
+
+      console.log(tabla);
+    } */
+
+    /*   Realizar un programa que lea los lados de 4 triángulos, e informar:
+
+De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales), 
+isósceles (dos lados iguales), o escaleno (ningún lado igual)
+Cantidad de triángulos de cada tipo.
+Tipo de triángulo del que hay menor cantidad. */
+
+    /*  let equilateros = 0;
+    let isosceles = 0;
+    let escalenos = 0;
+
+    for (let i = 0; i < 4; i++) {
+      let ladoA = +prompt(`Ingrese el lado A del triángulo ${i + 1}`);
+      let ladoB = +prompt(`Ingrese el lado B del triángulo ${i + 1}`);
+      let ladoC = +prompt(`Ingrese el lado C del triángulo ${i + 1}`);
+
+      if (ladoA === ladoB && ladoB === ladoC) {
+        console.log(`El triángulo ${i + 1} es equilátero`);
+        equilateros++;
+      } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
+        console.log(`El triángulo ${i + 1} es isósceles`);
+        isosceles++;
+      } else {
+        console.log(`El triángulo ${i + 1} es escaleno`);
+        escalenos++;
+      }
+    }
+
+    console.log(`Cantidad de triángulos equiláteros: ${equilateros}`);
+    console.log(`Cantidad de triángulos isósceles: ${isosceles}`);
+    console.log(`Cantidad de triángulos escalenos: ${escalenos}`);
+
+    let claseMenor = "";
+    let menorCantidad = Infinity;
+
+    if (equilateros < menorCantidad) {
+      claseMenor = "equiláteros";
+      menorCantidad = equilateros;
+    }
+    if (isosceles < menorCantidad) {
+      claseMenor = "isósceles";
+      menorCantidad = isosceles;
+    }
+    if (escalenos < menorCantidad) {
+      claseMenor = "escalenos";
+      menorCantidad = escalenos;
+    }
+
+    console.log(
+      `El tipo de triángulo del que hay menor cantidad es: ${claseMenor}`
+    ); */
+    /*  Escribir un programa que pida ingresar coordenadas (x,y) que representan puntos en el plano. Informar cuántos puntos se han ingresado en el primer, segundo, tercer y cuarto cuadrante. Al comenzar el programa se pide que se ingrese la cantidad de puntos a procesar. */
+    /* 
+    let cantidadDePuntos = +prompt("ingrese la cantidad de puntos");
+    let cuadrante1 = 0;
+    let cuadrante2 = 0;
+    let cuadrante3 = 0;
+    let cuadrante4 = 0;
+
+    for (let i = 0; i < cantidadDePuntos; i++) {
+      let coordenadaX = +prompt("ingrese la coordenada X");
+      let coordenadaY = +prompt("ingrese la coordenada Y");
+
+      if (coordenadaX > 0 && coordenadaY > 0) {
+        console.log("el punto " + (i + 1) + " esta en el cuadrante 1");
+        cuadrante1++;
+      } else if (coordenadaX < 0 && coordenadaY > 0) {
+        console.log("el punto " + (i + 1) + " esta en el cuadrante 2");
+        cuadrante2++;
+      } else if (coordenadaX < 0 && coordenadaY < 0) {
+        console.log("el punto " + (i + 1) + " esta en el cuadrante 3");
+        cuadrante3++;
+      } else {
+        console.log("el punto " + (i + 1) + " esta en el cuadrante 4");
+        cuadrante4++;
+      }
+    }
+    console.log("cantidad de puntos en el cuadrante 1: " + cuadrante1);
+    console.log("cantidad de puntos en el cuadrante 2: " + cuadrante2);
+    console.log("cantidad de puntos en el cuadrante 3: " + cuadrante3);
+    console.log("cantidad de puntos en el cuadrante 4: " + cuadrante4); */
+
+    /* J2
+Tienes una lista de objetos con los nombres de los miembros de una familia y sus edades (mínimo 6 miembros). Este script debe:
+Devolver dos objetos, uno con el nombre y edad del miembro de mayor edad y el del de menor edad.
+Mostrar el promedio de edades de la familia.
+Mostrar cuántos miembros son mayores a 20 años.
+Permitir ingresar un nuevo miembro y mostrar todos por consola. */
+
+    let lista = [
+      { nombre: "juan", edad: 6 },
+      { nombre: "ezequiel", edad: 45 },
+      { nombre: "ana", edad: 63 },
+      { nombre: "pedro", edad: 25 },
+      { nombre: "javier", edad: 70 },
+      { nombre: "raquel", edad: 30 },
+    ];
+
+    let masviejo = lista[0];
+    let masjoven = lista[0];
+    let totalEdades = 0;
+
+    for (let i = 0; i < lista.length; i++) {
+      if (masviejo.edad > lista[i].edad) {
+        masviejo = lista[i];
+      }
+
+      if (masjoven.edad < lista[i].edad) {
+        masjoven = lista[i];
+      }
+    }
+
+    console.log("la persona mas vieja es " + masviejo.nombre + masviejo.edad);
+
+    /*  const miembros = [
+    { nombre: "Juan", edad: 25 },
+    { nombre: "María", edad: 18 },
+    { nombre: "Pedro", edad: 32 },
+    { nombre: "Sofía", edad: 12 },
+    { nombre: "Lucía", edad: 40 },
+    { nombre: "Miguel", edad: 22 },
+  ];
+  
+
+  let mayor = miembros[0];
+  let joven = miembros[0];
+  let totalEdad = 0;
+  
+
+  for (let i = 1; i < miembros.length; i++) {
+    if (miembros[i].edad > mayor.edad) {
+      mayor = miembros[i];
+    }
+    if (miembros[i].edad < joven.edad) {
+      joven = miembros[i];
+    }
+  }
+  
+  
+  for (let i = 0; i < miembros.length; i++) {
+    totalEdad += miembros[i].edad;
+  }
+  
+  
+  const averageAge = totalEdad / miembros.length;
+  
+  
+  let countOver20 = 0;
+  
+  
+  for (let i = 0; i < miembros.length; i++) {
+    if (miembros[i].edad > 20) {
+      countOver20++;
+    }
+  }
+  
+  
+  miembros.push({ nombre: "Carlos", edad: 28 });
+  
+  
+  console.log("Todos los miembros de la familia son:");
+  for (let i = 0; i < miembros.length; i++) {
+    console.log(miembros[i].nombre, "tiene", miembros[i].edad, "años.");
+  }
+  
+  
+  console.log("El miembro más viejo es:", mayor.nombre, "con", mayor.edad, "años.");
+  console.log("El miembro más joven es:", joven.nombre, "con", joven.edad, "años.");
+  console.log("El promedio de edad de la familia es:", averageAge);
+  console.log("Hay", countOver20, "miembros mayores de 20 años."); */
+  </script>
+</html>

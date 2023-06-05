@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <!-- Crear un formulario con tres botones con las leyendas "1", "2" y "3". 
+Mostrar un mensaje indicando qué botón se presionó. -->
+
+  <body>
+    <form id="boton">
+      <button id="boton1">---1---</button>
+      <button id="boton2">---2---</button>
+      <button id="boton3">---3---</button>
+    </form>
+
+    <script>
+      const boton1 = document.querySelector("#boton1");
+      const boton2 = document.querySelector("#boton2");
+      const boton3 = document.querySelector("#boton3");
+
+      function mensaje1() {
+        alert("how");
+      }
+      function mensaje2() {
+        alert("are");
+      }
+      function mensaje3() {
+        alert("you");
+      }
+
+      boton1.addEventListener("click", mensaje1);
+      boton2.addEventListener("click", mensaje2);
+      boton3.addEventListener("click", mensaje3);
+    </script>
+  </body>
+</html>

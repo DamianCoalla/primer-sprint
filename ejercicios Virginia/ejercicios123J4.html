@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios J4 Eventos y DOM</title>
+    <style>
+        /* EJERCICIO 1. Consultar el color de un ID
+Imprimir en la consola el color del contenedor */
+        /* 2. Cambiar fondo y dimensiones
+Cambiar al iniciar la página los colores y las dimensiones del ID contendor */
+
+        #contenedor {
+            background-color: red;
+            display: block;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ejercicio1 y 2 -->
+    <div id="contenedor" </div>
+
+        <!--       Ejercicio 3. Evento on click en un botón -->
+        <button onclick="cambiarEstilos()">Click</button>
+
+
+
+        <script>
+            /* Ejercicio 1 */
+            /*    let div = document.getElementById("contenedor");
+               let color = window.getComputedStyle(div).backgroundColor;
+               console.log("El color de fondo es: " + color); */
+
+            /*     Ejercicio 2 */
+            /*    let div = document.getElementById("contenedor");
+               div.style.backgroundColor = "blue";
+               div.style.width = "150px";
+               div.style.height = "150px"; */
+
+            /* Ejercicio 3. Cambios tras hacer click en el botón */
+
+            function cambiarEstilos() {
+                let div = document.getElementById("contenedor");
+                div.style.backgroundColor = "blue";
+                div.textContent = "Ya cambiaste los estilos";
+            }
+
+
+
+
+
+        </script>
+
+</body>
+
+</html>
+
+

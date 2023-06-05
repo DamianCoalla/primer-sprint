@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--     Escribir un programa que lea 10 notas de alumnos 
+    y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores. -->
+    <script>
+      let notas = [];
+
+      let notas7oMas = 0;
+      let notas6oMenos = 0;
+
+      for (let i = 0; i < 10; i++) {
+        let nota = +prompt("Introduce la nota del alumno " + (i + 1));
+        if (nota >= 7) {
+          notas7oMas++;
+        } else {
+          notas6oMenos++;
+        }
+      }
+
+      console.log(
+        "La cantidad de estudiantes con notas mayores o iguales a 7 es " +
+          notas7oMas
+      );
+      console.log(
+        "La cantidad de estudiantes con notas menores a 7 es " + notas6oMenos
+      );
+    </script>
+  </body>
+</html>

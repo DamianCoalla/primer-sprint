@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+                        /*       let salariosAltos = 0;
+                        let salariosBajos = 0;
+                        let presupuesto = 0;
+
+                        for (let i = 0; i < 5; i++) {
+                          let salario = +prompt("Ingrese el salario del operario " + (i + 1));
+                          presupuesto = presupuesto + salario; // El equivalente es presupuesto = presupuesto + salario
+                          if (salario > 300 && salario <= 500) {
+                            salariosAltos++;
+                          } else if (salario >= 100 && salario < 300) {
+                            salariosBajos++;
+                          } else if (salario < 100) {
+                            console.log(
+                              "Al menos uno de los salarios ingresados es menor al mínimo de 100"
+                            );
+                          } else {
+                            console.log(
+                              "Al menos uno de los salarios ingresados es mayor al salario máximo de 500"
+                            );
+                          }
+                        }
+
+                        console.log(
+                          "La cantidad de empleados con salarios entre 100 y 300 es " +
+                            salariosBajos
+                        );
+                        console.log(
+                          "La cantidad de empleados con salarios mayor a 300 es " + salariosAltos
+                        );
+                        console.log(
+                          "El presupuesto gastado por la empresa en salarios es de " + presupuesto
+                        ); */
+
+                        /*    let sueldos1 = 0;
+                        let sueldo2 = 0;
+                        let total = 0;
+                        let sueldos;
+                        let x = 0;
+                        while (x < 5) {
+                          sueldos = parseInt(prompt("Ingrese el sueldo"));
+                          if (sueldos <= 300) {
+                            sueldos1 = sueldos1 + 1;
+                          } else {
+                            sueldo2 = sueldo2 + 1;
+                          }
+                          total = total + sueldos;
+                          x = x + 1;
+                        }
+                        console.log("Cantidad de empleados que cobran 300 o menos:" + sueldos1);
+                        console.log("Cantidad de empleados que cobran más de 300:" + sueldo2);
+                        console.log("Gastos en sueldos en la empresa:" + total); */
+
+                        /*  Mostrar los múltiplos de 10 hasta el valor 1500.
+                        Debe aparecer en consola 10 - 20 -30 etc. */
+
+                        /* for (let index = 1; index <= 150; index++) {
+                          let valor = index * 10;
+                          console.log(valor);
+                        } */
+
+                        /*   let valor = 0;
+                        while (valor < 1500) {
+                          valor += 10;
+                          console.log(valor);
+                        } */
+                  /*
+                        let valor = 10;
+                        for (let i = 1; i <= 150; i++) {
+                          console.log(valor);
+                          /*  valor+= 10; */
+                          valor = valor + 10;
+                        }
+                      /*
+                        Realizar un programa que permita cargar dos listas de 3 valores cada una.
+                        Informar con un mensaje cuál de las dos listas tiene un valor acumulado mayor
+                        (mensajes 'Lista 1 mayor', 'Lista 2 mayor', 'Listas iguales’)
+                  Tener en cuenta que puede haber dos o más estructuras repetitivas en un algoritmo */
+            /*
+                  let suma1 = 0;
+
+                  for (let i = 0; i < 3; i++) {
+                      let valor= +prompt("Ingrese de la primer lista el valor " + (i + 1));
+                      suma1 += valor;
+                      }
+                      console.log(suma1);
+
+                      let suma2 = 0;
+                  for (let i2 = 0; i2 < 3; i2++) {
+                    let valor2 = +prompt("Ingrese de la segunda lista el valor " + (i2 + 1));
+                      suma2 += valor2;
+                  }
+                  console.log(suma2);
+
+                  if (suma1 > suma2) {
+                  console.log("Lista 1 mayor");
+                  }
+                  else if (suma2 > suma1) {
+                      console.log("Lista 2 mayor");
+                  }
+                  else {
+                      console.log("Ambas sumas son iguales");
+                  } */
+
+
+      /*             let lista1= prompt('ingrese lista1').split(',').map(Number)
+            let lista2 =prompt('ingrese lista2').split(',').map(Number)
+
+            let listas = [lista1, lista2]
+
+            let suma1 = 0;
+            let suma2 = 0;
+            for (let i = 0; i < listas.length; i++) {
+                 lista=listas[i]
+                if (i === 0) {
+            suma1= lista[0] + lista [1] + lista [2]
+            } else {
+            suma2 = lista[0] + lista [1] + lista [2]
+            }
+
+            }
+
+            if (suma1 > suma2) {
+            console.log("Lista 1 mayor");
+            }
+            else if (suma2 > suma1) {
+                console.log("Lista 2 mayor");
+            }
+            else {
+                console.log("Ambas sumas son iguales");
+            } */
+            let lista= prompt('ingrese 5 valores').split(',').map(Number);
+      let par = 0;
+      let impar = 0;
+
+      for (let i = 0; i < lista.length; i++) {
+         if (lista[i] % 2 === 0) {
+          (par++)
+         }
+         else {
+          (impar++);
+         }
+      }
+      console.log("Cantidad de pares " + par + "Cantidad de impares " + impar);
+    </script>
+  </body>
+</html>

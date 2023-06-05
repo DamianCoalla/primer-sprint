@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios</title>
+</head>
+
+<body>
+    <script>
+        /* 1 SOLO 25 TERMINOS */
+        /*
+    for (let numero = 1; numero <= 25; numero++) {
+      let valor = numero * 11;
+      console.log(valor);
+    }
+     */
+
+        /*  2. Múltiplos de 8 */
+        /*
+    for (let numero = 0; numero <= 62; numero++) {
+        let valor = numero * 8;
+        console.log(valor);
+    }
+     */
+
+        /*  3 CUÁNTOS TUVIERON MEJORES NOTAS */
+        /*
+    let notas = [];
+    
+    let notas7oMas = 0;
+    let notas6oMenos = 0;
+    
+    for (let i = 0; i < 10; i++) {
+     let nota = (+prompt("Introduce la nota del alumno " + (i + 1)));
+     if (nota >= 7) {
+        (notas7oMas++);
+    }
+        else {
+        (notas6oMenos++);
+    }
+    }
+    
+    console.log("La cantidad de estudiantes con notas mayores o iguales a 7 es " + notas7oMas);
+    console.log("La cantidad de estudiantes con notas menores a 7 es " + notas6oMenos);
+       */
+
+        /* 4 PROMEDIO DE ESTATURAS */
+        /*
+    let altura = [];
+    let suma = 0;
+    for (let i = 0; i < 5; i++) {
+        altura.push(+prompt("Ingrese la altura de la persona " + (i + 1) + " en metros"));
+        suma += altura[i]; 
+    }
+    console.log(altura);
+    
+    console.log(suma);
+    const promedio = (suma / 5);
+    
+    console.log("El promedio de alturas de las personas ingresadas es " + promedio + " metros"); 
+     */
+
+        /* 5 REPORTES DE SALARIOS */
+
+        /*
+    let salariosAltos = 0;
+    let salariosBajos = 0;
+    let presupuesto = 0;
+    
+    for (let i = 0; i < 5; i++) {
+        let salario = +prompt("Ingrese el salario del operario " + (i + 1));   
+        presupuesto = presupuesto + salario // El equivalente es presupuesto = presupuesto + salario
+        if (salario > 300 && salario <= 500) {
+            (salariosAltos++);
+        }
+        else if (salario >= 100 && salario < 300) {
+            (salariosBajos++);
+        }
+        else if (salario < 100) {
+            console.log("Al menos uno de los salarios ingresados es menor al mínimo de 100");
+        }
+        else {
+            console.log("Al menos uno de los salarios ingresados es mayor al salario máximo de 500");
+        }
+    }
+    
+    console.log("La cantidad de empleados con salarios entre 100 y 300 es " + salariosBajos);
+    console.log("La cantidad de empleados con salarios mayor a 300 es " + salariosAltos);
+    console.log("El presupuesto gastado por la empresa en salarios es de " + presupuesto);
+     */
+
+        /* 6 DE 10 EN 10 */
+        /*
+    for (let i = 0; i <= 150; i++) {
+        let valor = i * 10;
+        console.log(valor);
+    }
+     */
+
+        /* 7. Dos listas. Obtener el acumulado mayor. */
+        /*
+    let suma1 = 0;
+    
+    for (let i = 0; i < 3; i++) {
+        let valor= +prompt("Ingrese de la primer lista el valor " + (i + 1));
+        suma1 += valor;
+        }
+        console.log(suma1);
+    
+        let suma2 = 0;
+    for (let i2 = 0; i2 < 3; i2++) {
+      let valor2 = +prompt("Ingrese de la segunda lista el valor " + (i2 + 1));
+        suma2 += valor2;
+    }
+    console.log(suma2);
+    
+    if (suma1 > suma2) {
+    console.log("Lista 1 mayor");
+    }
+    else if (suma2 > suma1) {
+        console.log("Lista 2 mayor"); 
+    }
+    else {
+        console.log("Ambas sumas son iguales");
+    }
+     */
+        /*
+    let lista1= prompt('ingrese lista1').split(',').map(Number)
+    let lista2 =prompt('ingrese lista2').split(',').map(Number)
+    
+    let listas = [lista1, lista2]
+    
+    let suma1 = 0;
+    let suma2 = 0;
+    for (let i = 0; i < listas.length; i++) {
+         lista=listas[i]
+        if (i === 0) {
+    suma1= lista[0] + lista [1] + lista [2]
+    } else {
+    suma2 = lista[0] + lista [1] + lista [2]
+    }
+    
+    }
+    
+    if (suma1 > suma2) {
+    console.log("Lista 1 mayor");
+    }
+    else if (suma2 > suma1) {
+        console.log("Lista 2 mayor"); 
+    }
+    else {
+        console.log("Ambas sumas son iguales");
+    }
+     */
+
+        /*  8. ¿Par o impar? */
+        /*
+    let lista= prompt('ingrese 5 valores').split(',').map(Number);
+    let par = 0;
+    let impar = 0;
+    
+    for (let i = 0; i < lista.length; i++) {
+       if (lista[i] % 2 === 0) {
+        (par++)
+       }
+       else {
+        (impar++);
+       }
+    }
+    console.log("Cantidad de pares " + par + ". Cantidad de impares " + impar);
+     */
+
+        /*  9. ¿El triángulo de las bermudas? */
+        /*
+                let base1 = +prompt("Ingrese la medida en centrímetros de la base del tríangulo 1");
+                let altura1 = +prompt("Ingrese la medida en centrímetros de la altura del tríangulo 1");
+        
+                let base2 = +prompt("Ingrese la medida en centrímetros de la base del tríangulo 2");
+                let altura2 = +prompt("Ingrese la medida en centrímetros de la altura del tríangulo 2");
+        
+                let base3 = +prompt("Ingrese la medida en centrímetros de la base del tríangulo 2");
+                let altura3 = +prompt("Ingrese la medida en centrímetros de la altura del tríangulo 2");
+        
+                const superficie1 = (base1 * altura1) / 2;
+                const superficie2 = (base2 * altura2) / 2;
+                const superficie3 = (base3 * altura3) / 2;
+        
+                let superficieMayor12 = 0;
+        
+                if (superficie1 > 12) {
+                    superficieMayor12++;
+                }
+                if (superficie2 > 12) {
+                    superficieMayor12++;
+                }
+                if (superficie3 > 12) {
+                    superficieMayor12++;
+                }
+        
+                console.log("La base del tríangulo 1 es " + base1 + "cm. Su altura es " + altura1 + "cm y su superficie es de " + superficie1 + " centímetros cuadrados.");
+                console.log("La base del tríangulo 2 es " + base2 + "cm. Su altura es " + altura2 + "cm y su superficie es de " + superficie2 + " centímetros cuadrados.");
+                console.log("La base del tríangulo 3 es " + base3 + "cm. Su altura es " + altura3 + "cm y su superficie es de " + superficie3 + " centímetros cuadrados.");
+                console.log("La cantidad de triángulos cuya superficie es mayor a 12 centímetros cuadrados es " + superficieMayor12);
+         */
+
+        /* 10. Los últimos serán los primeros  */
+        /*
+     let numeros = [];
+     for (let i = 0; i < 10; i++) {
+       let numero = +prompt("Ingrese el número " + (i+1));
+       numeros.push(numero);
+    }
+    
+      let suma = 0;
+    
+      for (let i2 = 5; i2 < 10; i2++) {
+        suma += numeros[i2];
+    }
+    
+    console.log ("La suma de los últimos 5 números ingresasos es " + suma);
+     */
+
+        /*  11. Tabla del 5 */
+        /*
+           for (let i = 1; i <= 10; i++) {
+               let multiplo = i * 5; 
+               console.log(multiplo);   
+           }
+           */
+
+        /* 12. Tabla del # */
+        /*
+          let multiplicador = parseInt(prompt("Ingrese el valor de un número del 1 al 10 para ver los primeros 12 múltiplos"));
+          
+          if (multiplicador < 1 || multiplicador > 10) {
+              console.log("El valor ingresado no es correcto");
+          }
+          else {
+              for (let i = 1; i <= 12; i++) {
+                let tabla = multiplicador * i;
+                 console.log(tabla); 
+              }
+          }
+           
+       */
+        /*  12. Los cuatro triángulos */
+        /* 
+                let equilateros = 0;
+                let isosceles = 0;
+                let escalenos = 0;
+        
+                for (let i = 0; i < 4; i++) {
+                    let ladoA = +prompt(`Ingrese el lado B del triángulo ${i + 1}`);
+                    let ladoB = +prompt(`Ingrese el lado B del triángulo ${i + 1}`);
+                    let ladoC = +prompt(`Ingrese el lado C del triángulo ${i + 1}`);
+        
+                    if (ladoA === ladoB && ladoB === ladoC) {
+                        console.log(`El triángulo ${i + 1} es equilátero`);
+                        equilateros++;
+                    } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
+                        console.log(`El triángulo ${i + 1} es isósceles`);
+                        isosceles++;
+                    } else {
+                        console.log(`El triángulo ${i + 1} es escaleno`);
+                        escalenos++;
+                    }
+                }
+        
+                console.log(`Cantidad de triángulos equiláteros: ${equilateros}`);
+                console.log(`Cantidad de triángulos isósceles: ${isosceles}`);
+                console.log(`Cantidad de triángulos escalenos: ${escalenos}`);
+        
+                let claseMenor = "";
+                let menorCantidad = Infinity;
+        
+                if (equilateros < menorCantidad) {
+                    claseMenor = "equiláteros";
+                    menorCantidad = equilateros;
+                }
+                if (isosceles < menorCantidad) {
+                    claseMenor = "isósceles";
+                    menorCantidad = isosceles;
+                }
+                if (escalenos < menorCantidad) {
+                    claseMenor = "escalenos";
+                    menorCantidad = escalenos;
+                }
+        
+                console.log(`El tipo de triángulo del que hay menor cantidad es: ${claseMenor}`);
+        
+         */
+        /*  13.  Más coordenadas */
+        /*
+               const cantidad = parseInt(prompt("Ingrese la cantidad de puntos que va a digitar"));
+        
+                let cant1 = 0;
+                let cant2 = 0;
+                let cant3 = 0;
+                let cant4 = 0;
+        
+                for (let i = 1; i <= cantidad; i++) {
+                    let x = +prompt(`Ingrese la coordenada x del punto ${i}`);
+                    let y = +prompt(`Ingrese la coordenada y del punto ${i}`);
+        
+                    if (x > 0 && y > 0) {
+                        console.log(`El punto ${i} se encuentra en el cuadrante 1`);
+                        cant1++;
+                    } else if (x > 0 && y < 0) {
+                        console.log(`El punto ${i} se encuentra en el cuadrante 2`);
+                        cant2++;
+                    } else if (x < 0 && y > 0) {
+                        console.log(`El punto ${i} se encuentra en el cuadrante 4`);
+                        cant3++;
+                    } else if (x < 0 && y < 0) {
+                        console.log(`El punto ${i} se encuentra en el cuadrante 3`);
+                        cant4++;
+                    } else if (x === 0 || y === 0) {
+                        console.log("El punto ingresado no pertenece a ningún cuadrante");
+                    }
+                }
+        
+                console.log("La cantidad de puntos ingresados en el cuadrante 1 es " + cant1);
+                console.log("La cantidad de puntos ingresados en el cuadrante 2 es " + cant2);
+                console.log("La cantidad de puntos ingresados en el cuadrante 3 es " + cant3);
+                console.log("La cantidad de puntos ingresados en el cuadrante 4 es " + cant4);
+        
+         */
+
+        /*         15. Promedio de edades por turnos… */
+        /*
+                let edadesMañana = [];
+                let edadesTarde = [];
+                let edadesNocturno = [];
+        
+                for (let i = 0; i < 5; i++) {
+                    let edad = parseInt(prompt("Del turno matutino ingrese la edad del estudiante " + (i + 1)));
+                    edadesMañana.push(edad);
+                }
+        
+                for (let i2 = 0; i2 < 6; i2++) {
+                    let edad = parseInt(prompt("Del turno vespertino ingrese la edad del estudiante " + (i2 + 1)));
+                    edadesTarde.push(edad);
+                }
+        
+                for (let i3 = 0; i3 < 11; i3++) {
+                    let edad = parseInt(prompt("Del turno nocturno ingrese la edad del estudiante " + (i3 + 1)));
+                    edadesNocturno.push(edad);
+                }
+        
+                let sumaMañana = 0;
+                let sumaTarde = 0;
+                let sumaNocturno = 0;
+        
+                for (let i = 0; i < 5; i++) {
+                    sumaMañana += edadesMañana[i];
+                }
+        
+                for (let i = 0; i < 6; i++) {
+                    sumaTarde += edadesTarde[i];
+                }
+        
+                for (let i = 0; i < 11; i++) {
+                    sumaNocturno += edadesNocturno[i];
+                }
+        
+                let promedioMañana = (sumaMañana / 5);
+                let promedioTarde = (sumaTarde / 6);
+                let promedioNocturno = (sumaNocturno / 11);
+        
+                let mayorPromedio;
+        
+                if (promedioMañana > promedioTarde && promedioMañana > promedioNocturno) {
+                    mayorPromedio = "Turno matutino";
+                }
+                else if (promedioTarde > promedioMañana && promedioTarde > promedioNocturno) {
+                    mayorPromedio = "Turno vespertino"
+                }
+                else {
+                    mayorPromedio = "Turno nocturno"
+                }
+        
+                console.log("El promedio de edades del turno matutino es " + promedioMañana);
+                console.log("El promedio de edades del turno vespertino es " + promedioTarde);
+                console.log("El promedio de edades del turno nocturno es " + promedioNocturno);
+        
+                console.log("El turno con mayor promedio de edades es el: " + mayorPromedio);
+         */
+
+        /*       Ejercicio de ciclos */
+        /*
+                const arreglo = ['H', 'o', 'l', 'a', '!'];
+        
+        
+                const palabra = arreglo.join('');
+                console.log(palabra);
+        
+        
+                const espaciado = arreglo.join(' ');
+                console.log(espaciado);
+        
+        
+                let palabraCiclo = '';
+                for (let i = 0; i < arreglo.length; i++) {
+                    palabraCiclo += arreglo[i];
+                }
+                console.log(palabraCiclo);
+        
+        
+                let espaciadoCiclo = '';
+                for (let i = 0; i < arreglo.length; i++) {
+                    espaciadoCiclo += arreglo[i] + ' ';
+                }
+                console.log(espaciadoCiclo.trim());
+        
+                 */
+
+        /*        ARREGLOS */
+
+        /*         1. A sumar elementos en un arreglo  */
+        /*
+        let vector = [];
+        
+        for (let i = 0; i < 8; i++) {
+          vector.push(parseInt(prompt("Ingrese el valor para la posición " + (i + 1))));
+        }
+        
+        let acumuladoTotal = 0;
+        let acumuladoMayor36 = 0;
+        let cantidadMayores50 = 0;
+        
+        for (let i = 0; i < vector.length; i++) {
+          acumuladoTotal += vector[i];
+          if (vector[i] > 36) {
+            acumuladoMayor36 += vector[i];
+          }
+          if (vector[i] > 50) {
+            cantidadMayores50++;
+          }
+        }
+        
+        console.log(`El valor acumulado de todos los elementos del vector es: ${acumuladoTotal}`);
+        console.log(`El valor acumulado de los elementos del vector que son mayores a 36 es: ${acumuladoMayor36}`);
+        console.log(`La cantidad de valores mayores a 50 es: ${cantidadMayores50}`); */
+
+
+        /*   2. Suma de arreglos */
+        /*
+                let vector1 = [];
+                let vector2 = [];
+                let tamaño = parseInt(prompt("Ingrese el tamaño de los vectores"));
+        
+                for (let i = 0; i < tamaño; i++) {
+                    let numero1 = +prompt("Ingrese un número para el vector 1");
+                    let numero2 = +prompt("Ingrese un número para el vector 2");
+        
+                    vector1.push(numero1);
+                    vector2.push(numero2);
+                }
+        
+        
+                let vectorSuma = [];
+        
+                for (let i = 0; i < tamaño; i++) {
+                    let suma = vector1[i] + vector2[i];
+                    vectorSuma.push(suma);
+                }
+        
+                console.log("El resultado de la suma de los dos vectores es: " + vectorSuma);
+         */
+
+        /*  Ejercicio de arreglos */
+        /* Dado el arreglo [true, 'hola', 4, null]
+        Implementar una función por cada item y probarlo con arreglo de ejemplo
+        Imprimir el tercer elemento del arreglo
+        Cambiar el último valor por un 3
+        Remover los ultimos dos elementos
+        Agregar un 6 y un 'chau' al final
+        Insertar en la tercera posición del arreglo un 5 */
+
+
+
+
+
+
+
+        /* 1. Rellenemos! */
+
+        /* let numeros = [];
+
+        for (let i = 1; i <= 10; i++) {
+            numeros.push(i);
+        }
+        console.log(numeros);
+ */
+
+        /*  2. Relleno aleatorio */
+
+
+        /* Math.random() devuelve un número aleatorio entre 0 y 1,
+        mientras que Math.floor() devuelve el número entero menor o igual 
+        al valor que se le pasa como argumento. */
+
+        /*
+          let numerosAleatorios = [];
+  
+          for (let i = 0; i < 10; i++) {
+              let numero = Math.floor(Math.random() * 100) + 1;
+              numerosAleatorios.push(numero);
+          }
+  
+          console.log(numerosAleatorios);
+  
+   */
+
+
+        /*         3. Copiar array */
+
+        /*    método slice().
+           Este método devuelve una copia de una porción del arreglo original. 
+           Si se omite el parámetro de inicio, se copia todo el arreglo. 
+           Por lo tanto, para crear una copia exacta de un arreglo, 
+           simplemente llamamos a slice() sin ningún parámetro. */
+
+        /*
+        
+        let numerosAleatorios = [];
+ 
+         for (let i = 0; i < 10; i++) {
+             let numero = Math.floor(Math.random() * 100) + 1;
+             numerosAleatorios.push(numero);
+         }
+ 
+         console.log(numerosAleatorios);
+ 
+         let copiaNumerosAleatorios = numerosAleatorios.slice();
+         console.log(copiaNumerosAleatorios);
+  */
+
+        /*   4. Ordenemos  */
+        /*
+                El método sort() se utiliza para ordenar los elementos de un arreglo en Javascript. 
+                Por defecto, el método ordena los elementos como si fueran cadenas de caracteres, 
+                es decir, ordena los elementos en orden alfabético.
+        
+                Si se desea ordenar un arreglo de números de menor a mayor, 
+                puedes proporcionar una función de comparación como argumento al método sort(). 
+                Esta función toma dos parámetros 
+                y devuelve un valor negativo si el primer parámetro debe aparecer antes del segundo,
+                un valor positivo si el segundo parámetro debe aparecer antes del primero y 
+                cero si ambos elementos son iguales.
+        
+         */
+
+        /*
+                        let numeros = [];
+                
+                        for (let i = 0; i < 10; i++) {
+                            numeros.push(Math.floor(Math.random() * 100) + 1);
+                        }
+                
+                        console.log(numeros);
+                
+                        numeros.sort(function (a, b) {
+                            return a - b;
+                        });
+                
+                        console.log(numeros);
+                
+          
+         */
+        /*        OBJETOS */
+
+        /*   1. Tu Entorno */
+        /*
+                const silla = {
+                    color: "negro",
+                    cantidadPatas: 4,
+                    material: "hierro",
+                }
+        
+                const mesa = {
+                    color: "negro",
+                    cantidadPatas: 4,
+                    material: "metal",
+                    superficie: "vidrio",
+                }
+        
+                const ventana = {
+                    color: "blanco",
+                    material: "vidrio",
+                    caracteristica: "tiene mosquitero",
+                }
+        
+                const cuadernola = {
+                    cantidadHojas: 70,
+                    tipoDeHojas: "ralladas",
+                    marca: "Papiros",
+                    modelo: "flex",
+                }
+        
+                const lapicera = {
+                    material: "plastico",
+                    colorExterno: "traslúcido",
+                    colorTinta: "azul",
+                }
+        
+                const pad = {
+                    color: "estampado",
+                    marca: "Channel Fireball",
+                    tipo: "judge",
+                    evento: "GP Las Vegas",
+                }
+         */
+
+
+        /*       2. Deportista! */
+        /*
+                let deportista = {
+                    energia: 100,
+                    experiencia: 10,
+                    nombre: "M. Jordan",
+                    entrenarHoras: function (horas) {
+                        this.energia -= horas * 5;
+                        this.experiencia += horas * 2;
+                    }
+                };
+        
+                console.log("Nombre " + deportista.nombre + " Energía: " + deportista.energia + " Experiencia: " + deportista.experiencia);
+        
+                let valor = +prompt("Ingrese la cantidad de horas que el deportista va a entrenar");
+        
+                deportista.entrenarHoras(valor);
+                console.log("Energía restante: " + deportista.energia);
+                console.log("Experiencia actual: " + deportista.experiencia);
+        
+         */
+
+        /*          3. Array de objetos! */
+        /*
+                let lista = [
+                    {
+                        nombre: "Julio",
+                        apellido: "Boca",
+                        telefono: "12345678",
+                        nacimiento: "01/02/03",
+                        direccion: "calle Falsa 1234",
+                    },
+                    {
+                        nombre: "Adela",
+                        apellido: "Reta",
+                        telefono: "23456789",
+                        nacimiento: "02/03/04",
+                        direccion: "calle Falsa 2345",
+                    },
+                    {
+                        nombre: "Homero",
+                        apellido: "Simpson",
+                        telefono: "01234567",
+                        nacimiento: "03/04/05",
+                        direccion: "calle Falsa 3456",
+                    }
+        
+                ];
+        
+                console.log(lista);
+        
+         */
+    </script>
+</body>
+
+</html>

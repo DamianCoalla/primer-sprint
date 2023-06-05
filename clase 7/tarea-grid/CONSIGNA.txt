@@ -1,0 +1,1 @@
+Plantear una solución para pantallas de tamaño tablet. 600px a 1020px. A SU GUSTO. Utilizando GRID.

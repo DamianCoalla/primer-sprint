@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*    Se cuenta con la siguiente información:
+              Las edades de 5 estudiantes del turno mañana.
+              Las edades de 6 estudiantes del turno tarde.
+              Las edades de 11 estudiantes del turno noche.
+              Las edades de cada estudiante debe ingresar por teclado.
+
+              Obtener el promedio de las edades de cada turno (tres promedios).
+              Imprimir dichos promedios (promedio de cada turno).
+              Mostrar por pantalla un mensaje que indique cuál de los tres turnos tiene un promedio de edades mayor. */
+
+      /*       let total2 = 0;
+                    let total3 = 0;
+
+                    for (let i = 0; i < 5; i++) {
+                      let edad1 = parseInt(
+                        prompt(`turno de la mañana- ingresar edad de estudiante ${i + 1}`)
+                      );
+                      total1 += edad1;
+                    }
+
+                    for (let i = 0; i < 6; i++) {
+                      let edad2 = parseInt(
+                        prompt(`turno de la tarde- ingresar edad de estudiante ${i + 1}`)
+                      );
+                      total2 += edad2;
+                    }
+
+                    for (let i = 0; i < 11; i++) {
+                      let edad3 = parseInt(
+                        prompt(`turno de la noche- ingresar edad de estudiante ${i + 1}`)
+                      );
+                      total3 += edad3;
+                    }
+
+                    let promedio1 = total1 / 5;
+                    let promedio2 = total2 / 6;
+                    let promedio3 = total3 / 11;
+
+                    alert("promedio del turno de la mañana: " + promedio1);
+                    alert("promedio del turno de la tarde: " + promedio2);
+                    alert("promedio del turno de la noche: " + promedio3);
+
+                    if (promedio1 > promedio2 && promedio1 > promedio3) {
+                      alert("el promedio del turno de la mañana es mayor");
+                    } else if (promedio2 > promedio1 && promedio2 > promedio3) {
+                      alert("el promedio del turno de la tarde es mayor");
+                    } else if (promedio3 > promedio1 && promedio3 > promedio2) {
+                      alert("el promedio del turno de la noche es mayor");
+                    } */
+
+      /*  Dado el arreglo ['H', 'o', 'l','a', '!']
+              Imprimir todo el arreglo en una misma palabra
+              Agregar espacios entre las letras e imprimirlas nuevamente para que se lea 'H o l a !'
+              Repetir el A y B con el método de ciclos no utilizado anteriormente. */
+      /*
+                    const arreglo = ["H", "o", "l", "a", "!"];
+                    const palabra = arreglo.join("");
+                    console.log(palabra);
+                    const palabraConEspacios = arreglo.join(" ");
+                    console.log(palabraConEspacios);
+                    let palabraFor = "";
+                    let palabraConEspaciosFor = "";
+                    for (let i = 0; i < arreglo.length; i++) {
+                      palabraFor += arreglo[i];
+                      palabraConEspaciosFor +=
+                        arreglo[i] + (i === arreglo.length - 1 ? "" : " ");
+                    }
+                    console.log(palabraFor);
+                    console.log(palabraConEspaciosFor);
+                    let palabraForOf = "";
+                    let palabraConEspaciosForOf = "";
+                    for (const letra of arreglo) {
+                      palabraForOf += letra;
+                      palabraConEspaciosForOf += letra + " ";
+                    }
+                    palabraConEspaciosForOf = palabraConEspaciosForOf.trim();
+                    console.log(palabraForOf);
+                    console.log(palabraConEspaciosForOf); */
+      /*
+                    otra Forma
+
+                    let arreglo = ['H', 'o', 'l', 'a', '!']
+                       let palabra = arreglo[0] + arreglo[1] + arreglo[2] + arreglo[3] + arreglo[4];
+                       console.log(palabra)
+
+                       const palabraConEspacio = arreglo.join(' ');
+                       console.log(palabraConEspacio);
+
+
+               let arreglo = ['H', 'o', 'l', 'a', '!']
+               let mensaje = '';
+               let mensajeConEspacio = '';
+
+               for (let i = 0; i < arreglo.length; i++) {
+                   mensaje += arreglo[i]
+                   mensajeConEspacio += arreglo[i] + ' ';
+               }
+               console.log(mensaje)
+               console.log(mensajeConEspacio) */
+
+      /* Desarrollar un programa que permita ingresar un vector de 8 elementos, e informe:
+              	El valor acumulado de todos los elementos del vector.
+              	El valor acumulado de los elementos del vector que sean mayores a 36.
+              	Cantidad de valores mayores a 50.  */
+
+      /*
+                  1) Crea un array que contenga el nombre de cinco colores escritos como strings.
+              	a) Accede al elemento en la posición 3 y mostralo por consola
+              	b) Accede al elemtno en la posición 1 y mostralo por consola
+              	c) Cambia el valor del elemento en la posición 2 por otro color y luego mostrá el cambio por consola.
+              	d) Guarda en una variable el tercer elemento del array y mostrá la variable por consola. */
+      /*
+                    let arreglo = ["blanco", "negro", "rojo", "verde", "amarillo"];
+                    console.log(arreglo[3]);
+
+                    console.log(arreglo[1]);
+
+                    arreglo[2] = "celeste";
+                    console.log(arreglo[2]);
+
+                    let arreglo3er = arreglo[2];
+                    console.log(arreglo3er); */
+      /*
+                    2) Crear un objeto Mascota el cual contenga los siguientes atributos: nombre, edad, raza, tipo (gato o perro)
+              	a) Accede al  nombre del animal para cambiarlo por otro (mostrá el cambio por consola).
+              	b) Accede al tipo del animal para cambiarlo por otro (mostrá el cambio por consola).
+              	c) Muestra por consola la raza del animal. */
+
+      /*   let mascota = {
+                nombre: "catulo",
+                edad: 3,
+                raza: "siames",
+                tipo: "gato",
+              };
+
+              mascota.nombre = "yang";
+              console.log(mascota.nombre);
+
+              mascota.tipo = "perro";
+              console.log(mascota.tipo);
+
+              console.log(mascota.raza); */
+
+      /*    3) Creemos un objeto persona el cual contenta los siguientes atributos:
+        	-Nombre
+        	-Apellido
+        	-Dni
+        	-Edad
+        	-Domicilio --> este internamente es otro objeto (Domicilio) que está dentro de
+            Persona el cual contiene los siguientes atributos:
+        		-Calle
+        		-Altura
+        		-Barrio.
+
+
+              /* let persona = {
+                nombre: "martha",
+                apellido: "deMerlo",
+                dni: 11111111,
+                edad: 68,
+                Domicilio: { calle: "rivera", altura: 4529, barrio: "malvin" },
+              };
+              console.log(persona); */
+
+      /* 4) Crear un array que contenga tres tipos de casas (pequeño, grande y mediano)
+              -cada uno de estos tipos representa un objeto-.
+              Los atributos de los objetos va a ser: tipo (pequeño, grande y mediano) y mts cuadrados.
+        	a) Accede al elemento en la posición 1 y mostralo por consola
+        	b) Accede al elemento en la posición 0 y mostrá solo el tipo
+        	c) Cambia el valor de los mts cuadrados del objeto en la posición 2 por otro y
+            luego mostrá el cambio por consola.
+        	d) Guarda en una variable el elementos[0], cambia sus metros cuadrados luego y muestra
+            a la variable por consola.
+         */
+      /*
+              let arreglo = [
+                { tipo: "pequenio", mtsCuadrados: 40 },
+                { tipo: "grande", mtsCuadrados: 60 },
+                { tipo: "mediano", mtsCuadrados: 50 },
+              ];
+
+              console.log(arreglo[1]);
+              console.log(arreglo[0].tipo);
+
+              arreglo[2].mtsCuadrados = 100;
+              console.log(arreglo[2].mtsCuadrados);
+
+              let elemento0 = arreglo[0];
+              arreglo[0].mtsCuadrados = 70;
+              console.log(elemento0); */
+
+      /*       J2
+        Tienes una lista de objetos con los nombres de los miembros de una familia y sus edades
+        (mínimo 6 miembros). Este script debe:
+        Devolver dos objetos, uno con el nombre y edad del miembro de mayor edad y el del de menor edad.
+        Mostrar el promedio de edades de la familia.
+        Mostrar cuántos miembros son mayores a 20 años.
+        Permitir ingresar un nuevo miembro y mostrar todos por consola. */
+      /* let lista = [
+          { nombre: "damian", edad: 45 },
+          { nombre: "juan", edad: 66 },
+          { nombre: "pedro", edad: 30 },
+          { nombre: "tota", edad: 4 },
+          { nombre: "marcela", edad: 20 },
+          { nombre: "pepe", edad: 10 },
+          { nombre: "francisco", edad: 18 },
+        ];
+        let mayorEdad = lista[0];
+        let menorEdad = lista[0];
+        let sumaEdad = 0;
+        for (let i = 0; i < lista.length; i++) {
+          if (lista[i].edad > mayorEdad.edad) {
+            mayorEdad = lista[i];
+          }
+          if (lista[i].edad < mayorEdad.edad) {
+            menorEdad = lista[i];
+          }
+
+            sumaEdad += lista[i].edad;
+        }
+
+        console.log(mayorEdad.nombre + mayorEdad.edad);
+
+        let promedioEdad = sumaEdad / lista.length;
+        console.log(promedioEdad); */
+
+      /* ARRIBA FRAN RESUMIO EL CODIGO
+       */
+      /*       let lista = [
+                { nombre: "damian", edad: 45 },
+                { nombre: "juan", edad: 66 },
+                { nombre: "pedro", edad: 30 },
+                { nombre: "tota", edad: 4 },
+                { nombre: "marcela", edad: 20 },
+                { nombre: "pepe", edad: 10 },
+              ];
+              let mayorEdad = lista[0];
+              let menorEdad = lista[0];
+
+              for (let i = 0; i < lista.length; i++) {
+                if (lista[i].edad > mayorEdad.edad) {
+                  mayorEdad = lista[i];
+                }
+                if (lista[i].edad < mayorEdad.edad) {
+                  menorEdad = lista[i];
+                }
+              }
+              console.log(mayorEdad.nombre + mayorEdad.edad);
+
+              let sumaEdad = 0;
+              for (let i = 0; i < lista.length; i++) {
+                sumaEdad += lista[i].edad;
+              }
+              let promedioEdad = sumaEdad / 6;
+              console.log(promedioEdad);
+
+              let nuevoMiembro = { nombre: "fede", edad: 25 };
+              lista.push(nuevoMiembro);
+
+              console.log(lista); */
+      /*       J3
+        A partir de una lista artículos que contienen objetos con nombre del artículo, stock y sus precios.
+        Crear una función precio(art) precio que lleva como argumento el nombre de un artículo y devuelve
+        el precio correspondiente. si el artículo no existe devolver
+        "Ese artículo no existe en nuestra base de datos".
+        Crear una función que obtenga el artículo de mayor precio.
+        Crear un función que obtenga el promedio de los precios de los artículos.
+        Crear una función que muestre la suma total del stock de todos los artículos de lista.
+        Permitir disminuir el stock de un artículo en particular y luego mostrar el resultado.
+        Validar que el stock siempre sea mayor al
+         valor ingresado. */
+
+      const articulos = [
+        { nombre: "leche", stock: "50", precio: 35 },
+        { nombre: "pan", stock: "59", precio: 50 },
+        { nombre: "miel", stock: "10", precio: 120 },
+        { nombre: "chocolate", stock: "200", precio: 78 },
+      ];
+
+      function precio() {
+        let articulo = prompt("ingrese el articulo que desea");
+
+        for (let i = 0; i < articulos.length; i++) {
+          if (articulo === articulos[i].nombre) {
+            return console.log(articulos[i].precio);
+          }
+        }
+        console.log("no existe en la bases de datos");
+      }
+      calculoMP();
+      function calculoMP() {
+        let mayorprecio = articulos[0];
+
+        for (let i = 0; i < articulos.length; i++) {
+          if (articulos[i].precio >= mayorprecio.precio) {
+            mayorprecio = articulos[i];
+          }
+        }
+        console.log(mayorprecio.nombre);
+      }
+      promedio();
+
+      function promedio() {
+        let suma = 0;
+        for (let i = 0; i < articulos.length; i++) {
+          suma += articulos[i].precio;
+        }
+        console.log(suma / articulos.length);
+      }
+    </script>
+    <button onclick="precio()">ver articulos</button>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        border: solid 1px black;
+        background-color: red;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box"></div>
+    <button id="boton1">Cambiar Azul</button>
+    <button id="boton2">Cambiar Verde</button>
+    <button id="boton3">Cambiar Tosmato</button>
+    <button id="boton4">Cambiar Azul</button>
+    <script>
+      document.getElementById("boton1").addEventListener("click", () => {
+        document.getElementById("box").style.backgroundColor = "blue";
+      });
+      document.getElementById("boton2").addEventListener("click", () => {
+        document.getElementById("box").style.backgroundColor = "green";
+      });
+      document.getElementById("boton3").addEventListener("click", () => {
+        document.getElementById("box").style.backgroundColor = "Tomato";
+      });
+      document.getElementById("boton4").addEventListener("click", () => {
+        document.getElementById("box").style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        border: solid 1px black;
+        background-color: red;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box"></div>
+    <button id="boton1">Cambiar Azul</button>
+    <button id="boton2">Cambiar Verde</button>
+    <button id="boton3">Cambiar Tomato</button>
+    <button id="boton4">Cambiar Azul</button>
+    <script>
+      document.getElementById("boton1").addEventListener("click", () => {
+        document.getElementById("box").style.backgroundColor = "blue";
+      });
+      document.getElementById("boton2").addEventListener("click", () => {
+        document.getElementById("box").style.backgroundColor = "green";
+      });
+      document.getElementById("boton3").addEventListener("click", () => {
+        document.getElementById("box").style.backgroundColor = "Tomato";
+      });
+      document.getElementById("boton4").addEventListener("click", () => {
+        document.getElementById("box").style.backgroundColor = "red";
+      });
+
+      /*Funcion hover*/
+      document.getElementById("box").addEventListener("mouseover", () => {
+        document.getElementById("box").style.backgroundColor = "yellow";
+      });
+
+      document.getElementById("box").addEventListener("mouseleave", () => {
+        document.getElementById("box").style.backgroundColor = "pink";
+      });
+    </script>
+  </body>
+</html>

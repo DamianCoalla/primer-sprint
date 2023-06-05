@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+            /* let piedra = "piedra"
+      let papel = "papel"
+      let tijera = "tijera" */
+
+            let jugador1 = prompt(
+              "ingrese piedra, papel. tijera, spock o lagarto"
+            ).toLowerCase();
+            let jugador2 = prompt(
+              "ingrese piedra, papel, tijera, spock o lagarto"
+            ).toLowerCase();
+
+            if (
+              (jugador1 == "piedra" && jugador2 == "papel") ||
+              (jugador1 == "papel" && jugador2 == "tijera") ||
+              (jugador1 == "tijera" && jugador2 == "piedra") ||
+
+            ) {
+              let ganador = "jugador2 gana";
+
+              console.log(ganador);
+            } else if (
+              (jugador1 == "piedra" && jugador2 == "tijera") ||
+              (jugador1 == "papel" && jugador2 == "piedra") ||
+              (jugador1 == "tijera" && jugador2 == "papel")
+            ) {
+              let ganador = "jugador 1 gana";
+              console.log(ganador);
+            } else {
+              let ganador = "Empate";
+              console.log(ganador);
+            }
+    </script>
+  </body>
+</html>

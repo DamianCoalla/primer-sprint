@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>DamiánCoalla--Desafío1</title>
+    <link rel="stylesheet" href="link rel=" preconnect"
+    href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="DamiánCoalla--Desafío1.css" />
+  </head>
+  <body>
+    <main class="contenedor">
+      <section class="front-back">
+        <div class="front">
+          <img src="bg-card-front.png" alt="" />
+
+          <div class="detalles-front">
+            <img src="card-logo.svg" alt="" />
+
+            <div>
+              <p class="numerostarjeta">1234 4567 8910 1234</p>
+              <div class="datosfrente">
+                <p class="Felicia">Felicia Leire</p>
+                <p class="ceritos"><span>00</span>/<span>00</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back">
+          <img src="bg-card-back.png" alt="" />
+          <div class="CVC">
+            <p class="_000">000</p>
+          </div>
+        </div>
+      </section>
+      <section class="formulario">
+        <div class="formulariomargen">
+          <form action="">
+            <label class="etiqueta" for="cardholder_name"
+              >CARDHOLDER NAME</label
+            >
+            <input
+              id="cardholder_name"
+              class="campo"
+              placeholder="e.g. Felicia Leire"
+              type="text"
+              name="cardholder name"
+            />
+            <label class="etiqueta" for="card_number">CARD NUMBER</label>
+            <input
+              class="campo"
+              id="card_number"
+              type="number"
+              placeholder="e.g. 0000 0000 0000 0000"
+              name="card_number"
+            />
+            <div class="datitos">
+              <label class="etiqueta" for="meses">EXP. DATE (MM/YY)</label>
+              <label class="etiqueta" for="CVC">CVC</label>
+              <div class="datosmesYanios">
+                <input
+                  class="campo"
+                  id="meses"
+                  placeholder="MM"
+                  name="meses"
+                  type="text"
+                />
+                <input
+                  class="campo"
+                  id="anios"
+                  placeholder="YY"
+                  name="anios"
+                  type="text"
+                />
+              </div>
+              <input
+                class="campoCVC"
+                id="CVC"
+                placeholder="e.g. 123"
+                name="CVC"
+                type="text"
+              />
+            </div>
+            <button class="boton" type="submit" value="Confirm">
+              Confirm!
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

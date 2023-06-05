@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    li {
+      list-style: none;
+      border: 1px solid white;
+      padding: 0 20px;
+      position: relative;
+      display: inline-block;
+      height: 40px;
+      width: 70 px;
+      background-color: purple;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "uno dos"
+        "tres cuatro";
+    }
+    body {
+      margin: 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 3fr 2fr 2fr 2fr;
+      grid-template-areas:
+        "nav"
+        "main"
+        "section1"
+        "section2"
+        "section3";
+      height: 100vh;
+      gap: 10px;
+    }
+
+    nav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      grid-area: main;
+      background-color: lightblue;
+    }
+    .section1 {
+      grid-area: section1;
+      background-color: lightgreen;
+    }
+    .section2 {
+      grid-area: section2;
+      background-color: lightgreen;
+    }
+    .section3 {
+      grid-area: section3;
+      background-color: lightgreen;
+    }
+
+    @media (min-width: 1000px) {
+      body {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr;
+        grid-template-areas:
+          "nav nav nav"
+          "main main main"
+          "section1 section2 section3";
+        height: 100vh;
+        gap: 10px;
+      }
+      nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "uno dos tres cuatro";
+        width: 100%;
+      }
+      .menu2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+      }
+    }
+    @media (min-width: 600px) and (max-width: 999px) {
+      body {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr 2fr 2fr 2fr;
+        grid-template-areas:
+          "nav nav"
+          "main main"
+          "section1 section2"
+          "section3 section3";
+
+        height: 100vh;
+        gap: 10px;
+      }
+      section {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "uno dos tres cuatro";
+        width: 100%;
+      }
+
+      .menu2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+      }
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="menu">
+        <h1>LOGO</h1>
+      </div>
+      <div class="menu2">
+        <ul>
+          <li>uno</li>
+          <li>dos</li>
+          <li>tres</li>
+          <li>cuatro</li>
+        </ul>
+      </div>
+    </nav>
+    <main></main>
+    <section class="section1"></section>
+    <section class="section2"></section>
+    <section class="section3"></section>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DamianCoalla-DesafioTarjetas</title>
+
+    <link rel="stylesheet" href="DamianCoalla-DasafioTarjetas.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="contenedor">
+      <section class="contenedorArriba">
+        <div class="frente">
+          <img class="tarjetaFrente" src="imagenes/bg-card-front.png" alt="" />
+          <img class="card-logo" src="imagenes/card-logo.svg" alt="" />
+          <p class="numeros">0000 0000 0000 0000</p>
+          <div class="datosFrente">
+            <p class="nombre">Felicia Leire</p>
+            <p><span class="mes">00</span>/<span class="anio">00</span></p>
+          </div>
+        </div>
+        <div class="dorso">
+          <img class="tarjetaDorso" src="imagenes/bg-card-back.png" alt="" />
+          <p class="ceros">000</p>
+        </div>
+      </section>
+
+      <section class="contenedorAbajo">
+        <form class="form">
+          <label for="input1" id="cardholder">CARDHOLDER NAME</label>
+          <input
+            type="text"
+            class="input1"
+            placeholder="  e.g. Felicia Leire"
+          />
+          <p class="mensajeError" id="mensajeErrorNombre">Can't be blank</p>
+          <br />
+          <label for="input2" id="card-number">CARD NUMBER</label>
+          <input
+            type="text"
+            class="input2"
+            placeholder="e.g. 1234 5678 9123 "
+            maxlength="16"
+          />
+          <p class="mensajeError" id="mensajeErrorNumero">
+            Wrong format, numbers only
+          </p>
+          <br />
+          <div class="form-data">
+            <div class="month">
+              <label for="MM">EXP. DATE</label>
+              <input id="mm" placeholder="  MM" name="MM" maxlength="2" />
+              <p class="mensajeError" id="mensajeErrorMes">Can't be blank</p>
+            </div>
+            <div class="year">
+              <label for="YY" class="MMYY">(MM/YY)</label>
+              <input id="yy" placeholder="  YY" name="YY" maxlength="2" />
+              <p class="mensajeError" id="mensajeErrorAnio">Can't be blank</p>
+            </div>
+            <div class="verification">
+              <label for="cvc">CVC</label>
+              <input
+                id="cvc"
+                type="text"
+                placeholder="  e.g 123"
+                name="cvc"
+                maxlength="3"
+              />
+              <p class="mensajeError" id="mensajeErrorCvc">Can't be blank</p>
+            </div>
+          </div>
+          <br />
+          <input type="button" id="button" value="Confirm" />
+        </form>
+        <div class="thankYou">
+          <img
+            id="logoComplete"
+            src="imagenes/icon-complete.svg"
+            alt=""
+          /><br /><br />
+          <h1 id="title">THANK YOU!</h1>
+          <br />
+          <p id="paragraph">We've added your card details</p>
+          <br /><br />
+          <button id="continue" type="submit">Continue</button>
+        </div>
+      </section>
+    </main>
+    <script src="DamianCoalla-DesafioTarjetas.js"></script>
+  </body>
+</html>

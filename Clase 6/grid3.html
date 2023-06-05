@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50% repeat(4, 1fr);
+        gap: 5px;
+
+        grid-template-areas:
+          "header header header header"
+          "aside a3 a4 a5"
+          "aside a6 a4 a5"
+          "aside a6 a7 a5"
+          "aside a6 a8 a9";
+      }
+
+      header {
+        grid-area: header;
+      }
+
+      aside {
+        grid-area: aside;
+      }
+
+      .a3 {
+        grid-area: a3;
+      }
+
+      .a4 {
+        grid-area: a4;
+      }
+
+      .a5 {
+        grid-area: a5;
+      }
+
+      .a6 {
+        grid-area: a6;
+      }
+
+      .a7 {
+        grid-area: a7;
+      }
+
+      .a8 {
+        grid-area: a8;
+      }
+
+      .a9 {
+        grid-area: a9;
+      }
+
+      .box {
+        border: 1px solid black;
+        background-color: yellow;
+      }
+
+      @media (max-width: 400px) {
+        body {
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+        }
+
+        .box {
+          height: 7rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="box">1</header>
+    <aside class="box">2</aside>
+    <article class="a3 box">3</article>
+    <article class="a4 box">4</article>
+    <article class="a5 box">5</article>
+    <article class="a6 box">6</article>
+    <article class="a7 box">7</article>
+    <article class="a8 box">8</article>
+    <article class="a9 box">9</article>
+  </body>
+</html>

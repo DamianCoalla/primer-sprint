@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(yellow, green);
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+      div {
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        height: 30rem;
+        width: 20rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .input {
+        margin: 10px;
+      }
+      select {
+        width: 10.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Registrarse</h1>
+      <form>
+        <input
+          class="input"
+          type="text"
+          placeholder="Nombre *"
+          required
+        /><br />
+        <input
+          class="input"
+          type="email"
+          placeholder="Correo *"
+          required
+        /><br />
+        <input
+          class="input"
+          type="text"
+          placeholder="Fecha de nacimiento"
+          required
+        /><br />
+        <select class="input" name="Pais" id="">
+          <option class="input" value="Pais">Pais</option></select
+        ><br />
+        <input
+          class="input"
+          type="password"
+          placeholder="contraseña *"
+          minlength="8"
+          required
+        /><br />
+        <input
+          class="input"
+          type="password"
+          placeholder="Repetir contraseña"
+          minlength="8"
+          required
+        /><br />
+        <button class="input" type="submit">Registrarse ahora</button>
+      </form>
+    </div>
+  </body>
+</html>

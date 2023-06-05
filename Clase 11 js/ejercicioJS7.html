@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <style>
+        let precio = +prompt("Ingrese el precio del producto. Recuerde que debe ser múltiplo de 5");
+    let dinero = +prompt("Ingrese el dinero ingresado. Recuerde que solo acepta un billete");
+
+    const resto = (precio % 5);
+
+    let vuelto = (dinero - precio);
+    /* debugger; */
+    let monedas10 = 30;
+    let monedas5 = 50;
+
+    if (resto !== 0) {
+        console.log("El precio ingresado no es correcto");
+    }
+    else if (dinero !== 50 && dinero !== 100 && dinero !== 200 && dinero !== 500 && dinero !== 1000 && dinero !== 2000) {
+        console.log("El dinero ingresado no es correcto. Recuerde que la máquina sólo acepta billetes");
+    }
+    else if (vuelto > 550) {
+        console.log("No hay cambio suficiente");
+    }
+    else if (vuelto < 0) {
+        console.log("El dinero ingresado no es suficiente");
+    }
+    else if (vuelto === 0) {
+     console.log("No hay vuelto que dar.");
+    }
+    else {
+        let index10 = 0;
+        let index5 = 0;
+        for (index10; index10 < monedas10; index10++) {
+            vuelto = vuelto - 10;
+            monedas10 = monedas10 - 1;
+            if (vuelto === 0) {
+                console.log("Cantidad de monedas de 10", index10);
+                break;
+            }
+            else if (vuelto > 0 && monedas10 === 0) {
+                for (index5; index5 < monedas5; index5++) {
+                   vuelto = vuelto - 5;
+                   monedas5 = monedas5 - 1;
+                   if (vuelto === 0) {
+                    console.log("Cantidad de monedas de 5", index5);
+                    console.log ("Cantidad de monedas de 10", index10);
+                break;
+                   }
+
+                }
+            }
+            else {
+                console.log("Vuelto", vuelto);
+            }
+        }
+    }
+  </style>
+</html>

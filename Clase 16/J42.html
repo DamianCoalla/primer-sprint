@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--     Solicitar que se ingrese el nombre y la clave de un usuario. Mostrar una ventana de alerta
+     si en la clave se ingresan menos de 7 caracteres o más de 20 (capturar el evento onBlur) -->
+  </head>
+  <body>
+    <form action="">
+      <input id="nombredeusuario" type="text" />
+      <input id="clave" type="text" />
+    </form>
+    <script>
+      const validacionClave = document.getElementById("clave");
+      validacionClave.addEventListener("blur", validar);
+
+      function validar() {
+        const value = validacionClave.value;
+        console.log("entro en la funcion", value.length);
+
+        if (value.length < 7 || value.length > 20) {
+          alert("contrasenia invalida como vos hijo de puta");
+        }
+      }
+    </script>
+  </body>
+</html>

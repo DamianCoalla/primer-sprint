@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios J3</title>
+  </head>
+
+  <body>
+    <script>
+      /* 1. Rango de numeros */
+
+      /* Confeccionar una función que solicite la carga de dos enteros (primero el menor y luego el mayor) y nos muestre desde el menor hasta el mayor de uno en uno.
+          
+          Por ejemplo si ingresamos los valores 4 y 10 luego se debe mostrar por pantalla:
+              4 5 6 7 8 9 10 */
+
+      /*
+                  function mostrarNumeros() {
+                      let menor = parseInt(prompt("Ingresa el número menor: "));
+                      let mayor = parseInt(prompt("Ingresa el número mayor: "));
+                  
+                      for (let i = menor; i <= mayor; i++) {
+                          console.log(i);
+                      }
+                  }
+          
+                  mostrarNumeros(); */
+
+      /*     OTRA FORMA */
+
+      /*
+                  function nombre(mayor, menor) {
+                      let numeros = [];
+                      let numeroMenor = menor;
+                      while (mayor >= numeroMenor) {
+                          numeros.push(numeroMenor);
+                          numeroMenor++;
+                      }
+                      return numeros;
+                  }
+          
+                  let menor = parseInt(prompt("Ingrese el menor de los números"));
+                  let mayor = parseInt(prompt("Ingrese el mayor de los números"));
+          
+                  let resultado = nombre(mayor, menor);
+          
+                  alert(`Los números entre ${menor} y ${mayor} son: ${resultado.join(', ')}`);
+                   */
+
+      /*      2. ¿Cual es el menor? */
+
+      /*  Elaborar una función a la cual le enviemos tres enteros y muestre el menor. */
+
+      /*
+                  function mostrarMenor(x, y, z) {
+                      let numeros = [x, y, z];
+                      return numeros.sort((a, b) => { return a - b })[0];
+                  }
+          
+                  let x = parseInt(prompt("Ingrese el primer número: "));
+                  let y = parseInt(prompt("Ingrese el segundo número: "));
+                  let z = parseInt(prompt("Ingrese el tercer número: "));
+          
+                  console.log("El menor de los números ingresados es: " + mostrarMenor(x, y, z)); */
+
+      /*   3. Ordenando de mayor a menor */
+
+      /*    Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor. */
+      /*
+                  function ordenados(x, y, z) {
+                      let numeros = [x, y, z];
+                      return numeros.sort((a, b) => { return a - b });
+                  }
+          
+                  let x = parseInt(prompt("Ingrese el primer número: "));
+                  let y = parseInt(prompt("Ingrese el segundo número: "));
+                  let z = parseInt(prompt("Ingrese el tercer número: "));
+          
+                  console.log("El arreglo ordenado de los números es: " + ordenados(x, y, z)); */
+
+      /* 4. ¿Cual es el mayor? */
+
+      /*  Confeccionar una función a la cual le envíe tres enteros y retorne el mayor de ellos */
+
+      /*   function mostrarMayor(x, y, z) {
+                let numeros = [x, y, z];
+                return numeros.sort((a, b) => { return b - a })[0];
+            }
+    
+            let x = parseInt(prompt("Ingrese el primer número: "));
+            let y = parseInt(prompt("Ingrese el segundo número: "));
+            let z = parseInt(prompt("Ingrese el tercer número: "));
+    
+            console.log("El mayor de los números ingresados es: " + mostrarMayor(x, y, z)); */
+
+      /*  5. Perímetro de un cuadrado */
+
+      /*   Elaborar una función a la cual le envíe el valor del lado de un cuadrado y me retorne su perímetro. */
+      /*
+                  function perimetro(lado) {
+                      return (lado * 4);
+                  }
+          
+                  let lado = parseInt(prompt("Ingrese el lado del cuadrado"));
+                  console.log("El perímetro del cuadrado es: " + perimetro(lado)); */
+
+      /*    6. ¿Cuántos Dígitos? */
+
+      /* Desarrollar una función que retorne la cantidad de dígitos que tiene una variable entera positiva de hasta 5 dígitos.
+       */
+
+      /*     function cantidadDigitos(x) {
+                  let cifras = (Math.floor(Math.log10(x))) + 1; 
+                  return cifras;
+              }
+      
+              let x = parseInt(prompt("Ingrese un número entero positivo:"));
+              document.write("La cantidad de digitos del numero ingresado es: " + cantidadDigitos(x)); */
+
+      /*  OTRA FORMA  */
+      /*
+                function ejercicio6() {
+                    function cantidadDigitos(x) {
+                        let cifras = x.toString().length;
+                        return cifras;
+                    }
+        
+                    let x = parseInt(prompt("Ingrese un número entero positivo:"));
+                    document.write(
+                        "La cantidad de digitos del numero ingresado es: " +
+                        cantidadDigitos(x)
+                    );
+                }
+         */
+      /* 7. A sumar! */
+
+      /*  Confeccionar una función que solicite la carga de 5 valores por teclado y retorne su suma. */
+      /*
+                function ejercicio7() {
+                    function suma(a, b, c, d, e) {
+                        return [a, b, c, d, e].reduce((a, b) => {
+                            return a + b;
+                        });
+                    }
+        
+                    let a = parseInt(prompt("Ingrese el primer valor: "));
+                    let b = parseInt(prompt("Ingrese el segundo valor: "));
+                    let c = parseInt(prompt("Ingrese el tercer valor: "));
+                    let d = parseInt(prompt("Ingrese el cuarto valor: "));
+                    let e = parseInt(prompt("Ingrese el quinto valor: "));
+        
+                    document.write(
+                        "La suma de los números ingresados es: " + suma(a, b, c, d, e)
+                    );
+                }
+         */
+      /*   8. Largos */
+
+      /*  Realizar una función que reciba un array que contiene strings. Retornar un nuevo array numérico cuyos elementos sean las cantidades de caracteres de los strings del array original.
+     
+     
+     Ejemplo: si el array original recibido contenía ["Hola", "celular", "ser", "exige"] se retornará el array [4,7,3,5]. */
+      /*
+                function ejercicio8() {
+                    function largos(a, b, c, d) {
+                        let palabras = [];
+                        [a, b, c, d].forEach((x) => {
+                            let suma = 0;
+                            for (let i = 0; i < x.length; i++) {
+                                suma++;
+                            }
+                            palabras.push(suma);
+                        });
+                        return palabras;
+                    }
+        
+                    let a = prompt("Ingrese la primer palabra: ");
+                    let b = prompt("Ingrese la segunda palabra: ");
+                    let c = prompt("Ingrese la tercera palabra: ");
+                    let d = prompt("Ingrese la cuarta palabra: ");
+        
+                    console.log(largos(a, b, c, d));
+                }
+         */
+      /*     9. Solo los mayores */
+
+      /*  Crear una función que reciba como parámetro un array de números y devuelva un nuevo array con los elementos que sean mayores o iguales al primero. */
+      /*
+                function ejercicio9() {
+                    function mayorOigual(numeros) {
+                        let iguales = [];
+                        for (let i = 0; i < numeros.length; i++) {
+                            if (numeros[0] === numeros[i] || numeros[i] > numeros[0]) {
+                                iguales.push(numeros[i]);
+                            }
+                        }
+                        iguales.shift(); // elimina en teoría el primer elemento
+                        return iguales;
+                    }
+                    console.log(mayorOigual([21, 15, 17, 36, 89, 2, 21, 34, 99, 0]));
+                }
+         */
+      /*    function test() {
+               console.log(a);
+               console.log(foo());
+   
+               var a = 1;
+               function foo() {
+                   return 2;
+               }
+           }
+   
+           test();
+   
+           la variable "a" se declara después de que se intenta mostrar su valor en la primera línea de la función "test", lo que significa que en ese momento la variable no está definida y su valor es "undefined". Con la función si bien se declara después la muestra, porque el scope de las funciones es diferente ?? */
+      /*
+                function ejercicioTesteo() {
+                    var a = 1;
+                    function someFunction(number) {
+                        function otherFunction(input) {
+                            return a;
+                        }
+                        a = 5;
+                        return otherFunction;
+                    } */
+
+      /*  No funciona porque nunca llame a ninguna de las funciones */
+
+      /*   function fullname= 'John Doe';
+          var obj = {
+              fullname: 'Colin Ihrig',
+              prop: {
+                  fullname: 'Aurelio De Rosa',
+                  getFullname: function () {
+                      return this.fullname;
+                  }
+              }
+          };
+  
+          console.log(obj.prop.getFullname());
+          var test = obj.prop.getFullname;
+          console.log(test());
+  
+              Faltan los paréntesis para el argumento en la línea 232 
+              Faltan las llaves, no funciona. */
+      /* 
+                var a = 1;
+                function b() {
+                    a = 10;
+                    return;
+                    function a() { }
+                }
+                b();
+                console.log(a);
+        
+                En la consola se ve el 1, solo, porque nunca se llamó a la función B. Solo se pide que se muestre a, pero el console log esta fuera del scope de la función, por eso solo lee el valor que esta en su mismo scope */
+    </script>
+  </body>
+</html>

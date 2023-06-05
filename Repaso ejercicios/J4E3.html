@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      /*    <h1>Titulo</h1> -->
+              /*     Confeccionar una página que muestre un mensaje con la función alert
+               inmediatamente después que se cargue.  -->  */
+
+      /*  function cargar() {
+        alert("se esta cargando la pagina");
+      }
+      window.onload = cargar; */
+      /* 
+      Confeccionar una página que permita abrir otra ventana cuando se presiona un botón. 
+      Dicha ventana debe tener como ancho 600 píxeles y alto 300 píxeles. */
+
+      const boton = document.createElement("button");
+      boton.innerHTML = "CARGAR";
+      boton.style.backgroundColor = "red";
+      boton.style.height = "100px";
+      boton.style.width = "150px";
+      boton.style.display = "flex";
+      boton.setAttribute("id", "btn");
+      document.body.appendChild(boton);
+
+      boton.addEventListener("click", () => {
+        window.open(
+          "https://www.montevideo.com.uy/",
+          "MsgWindow",
+          "width=600,height=300"
+        );
+      });
+    </script>
+  </body>
+</html>

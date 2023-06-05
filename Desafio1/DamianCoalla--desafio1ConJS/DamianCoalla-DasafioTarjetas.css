@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+.contenedor {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorArriba {
+    background-image: url(imagenes/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 35vh;
+}
+
+.contenedorAbajo {
+    width: 100vw;
+ padding-top: 3rem;
+}
+
+.tarjetaFrente {
+    height: 10rem;
+    width: 19rem;
+    border-radius: 0.7rem;
+    transform: translate(5%, 110%);
+    z-index: 1;
+    position: relative;
+}
+
+.card-logo {
+    height: 2rem;
+position: relative;
+z-index: 1;
+transform: translate(-500%, 180%);
+}
+
+.numeros {
+    position: relative;
+    z-index: 1;
+    transform: translate(7%, 450%);
+    color: white;
+    font-size: 17px;
+    letter-spacing: 4px;
+}
+
+.datosFrente{
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 16rem;
+    font-size: 14px;
+    transform: translate(13%, 700%);
+}
+.tarjetaDorso {
+    height: 10rem;
+    width: 19rem;
+    border-radius: 0.7rem;
+    transform: translate(20%, -90%);
+}
+.ceros {
+    position: relative;
+z-index: 1;
+transform: translate(75%, -1350%);
+color: white;
+font-size: 14px;
+}
+
+/* ACA EMPIEZA EL FORMULARIO */
+
+.contenedorAbajo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+  .form-data {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+  }
+.month {
+    display: flex;
+    flex-direction: column;
+}
+#mm{
+    width: 4rem;
+    border-radius: 0.4rem;
+    height: 3rem;
+}
+
+.year {
+    display: flex;
+    flex-direction: column;
+}
+
+#yy{
+    width: 4rem;
+    border-radius: 0.4rem;
+    height: 3rem;
+}
+.verification {
+    display: flex;
+    flex-direction: column;
+}
+
+#cvc{
+    width: 12rem;
+    border-radius: 0.4rem;
+    height: 3rem;
+}
+.input1 {
+height: 3rem;
+border: 1px solid black;
+border-radius: 0.4rem;
+}
+.input2 {
+    height: 3rem;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+}
+#button {
+    height: 3.5rem;
+   border-radius: 0.4rem;
+   background-color: hsl(278, 68%, 11%);
+    color: white;
+}
+label {
+    font-size: 13px;
+    padding-bottom: 0.7rem;
+    color: hsl(278, 68%, 11%);
+}
+ input:focus {
+   background-color: rgb(212, 199, 225);
+ }
+#button:hover {
+   opacity: 0.6;
+}
+   
+.thankYou {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+#continue {
+    height: 3.5rem;
+    width: 18rem;
+    border-radius: 0.4rem;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+}
+
+#title{
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    color:hsl(278, 68%, 11%);
+ }
+@media (min-width: 1440px) {
+
+    .contenedor {
+       display: flex;
+        flex-direction: row;
+    }
+
+    .contenedorArriba {
+        background-image: url(imagenes/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 45%;
+    }
+
+    .tarjetaFrente {
+        height: 14rem;
+        width: 25rem;
+        transform: translate(60%, 70%);
+    }
+
+    .tarjetaDorso {
+        height: 14rem;
+        width: 25rem;
+        transform: translate(85%, 70%);   
+    }
+
+    .card-logo {
+        height: 2.5rem;
+    transform: translate(-200%, -10%);
+    }
+    
+    .numeros {
+        transform: translate(50%, 150%);
+            font-size: 22px;
+        letter-spacing: 4px;
+    }
+    
+    .datosFrente{
+        width: 16rem;
+        font-size: 20px;
+        transform: translate(105%, 300%);
+    }
+    .ceros {
+    transform: translate(120%, 80%);
+
+    font-size: 20px;
+    }
+#mm{
+    width: 4.5rem;
+}
+
+#yy{
+    width: 4.5rem;
+}
+#cvc{
+    width: 14rem;
+}
+label {
+    font-size: 16px;
+}
+}
+
+.mensajeError {
+    color: red;
+    font-size: 10px;
+    padding-top: 6px;
+    display: none;
+}

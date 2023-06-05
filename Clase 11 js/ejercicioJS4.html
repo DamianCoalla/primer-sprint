@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--   Realizar un programa que lea por teclado dos números, 
+    si el primero es mayor al segundo informar su suma y diferencia, 
+    en caso contrario informar el producto y la división del primero 
+    respecto al segundo. -->
+  </body>
+  <script>
+    let numero1 = +prompt("ingrese el primer numero");
+    let numero2 = +prompt("ingrese el segundo numero");
+
+    if (numero1 > numero2) {
+      let suma = numero1 + numero2;
+      let resta = numero1 - numero2;
+      console.log("la suma es " + suma);
+      console.log("la resta es " + resta);
+    } else {
+      let multiplicacion = numero1 * numero2;
+      let division = numero1 / numero2;
+
+      console.log("la multiplicacion es " + multiplicacion);
+      console.log("la división es " + division);
+    }
+  </script>
+</html>

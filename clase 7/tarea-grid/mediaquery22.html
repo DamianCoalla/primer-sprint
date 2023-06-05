@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        color: gainsboro;
+        margin: 0 auto;
+        max-width: 1000px;
+        min-height: 100vh;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows:
+          100px
+          50px
+          1fr
+          100px
+          200px;
+        grid-template-areas:
+          "my-nav my-nav my-nav"
+          "my-header my-header my-header"
+          "my-section1 my-section1 my-section1"
+          "my-aside my-aside my-aside"
+          "my-section2 my-section2 my-section2";
+      }
+
+      nav {
+        background-color: cornflowerblue;
+        grid-area: my-nav;
+      }
+
+      header {
+        background-color: blueviolet;
+        grid-area: my-header;
+      }
+
+      aside {
+        background-color: darkmagenta;
+        grid-area: my-aside;
+      }
+
+      .section1 {
+        background-color: indigo;
+        grid-area: my-section1;
+      }
+
+      .section2 {
+        background-color: darkorchid;
+        grid-area: my-section2;
+      }
+
+      @media (min-width: 1001px) {
+        main {
+          grid-template-columns: 200px 1fr 200px;
+          grid-template-rows:
+            100px
+            1fr
+            1fr
+            1fr;
+          grid-template-areas:
+            "my-nav my-nav my-nav"
+            "my-header my-header my-header"
+            " my-section2 my-section1 my-aside";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>Nav</nav>
+      <header>Header</header>
+
+      <section class="section1">Section</section>
+      <section class="section2">section</section>
+      <aside>aside</aside>
+    </main>
+  </body>
+</html>

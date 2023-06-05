@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let nombre = prompt("nombre del operario");
+    let sueldo = prompt("sueldo");
+    let antiguedad = prompt("antiguedad");
+
+    if (sueldo < 500 && antiguedad >= 10) {
+      sueldo = sueldo * 1.2;
+      console.log("el nuevo sueldo de " + nombre + " es : " + sueldo);
+    }
+
+    if (sueldo < 500 && antiguedad < 10) {
+      sueldo = sueldo * 1.05;
+      console.log("el nuevo sueldo de " + nombre + " es : " + sueldo);
+    } else {
+      console.log("no te aumentamos nada, sindicalizate gil");
+    }
+  </script>
+</html>

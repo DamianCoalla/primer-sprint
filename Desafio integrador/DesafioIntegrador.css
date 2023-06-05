@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+#gridContainer {
+        display: grid;
+        grid-template: 
+        "header" auto
+        "main" auto
+        "characteristics" auto
+        "prices" auto
+        "footer" auto
+}
+
+#header {
+    grid-area: header;
+}
+#main {
+    grid-area: main;
+}
+#characteristics {
+    grid-area: characteristics;
+}
+#prices {
+    grid-area: prices;
+}
+#footer {
+    grid-area: footer;
+}
+
+@media(min-width: 390px) {
+    #gridContainer {
+        grid-template: 
+        "header" 60px
+        "main" auto
+        "characteristics" auto
+        "prices" auto
+        "footer" auto
+    }
+
+}

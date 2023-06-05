@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: aqua;
+        grid-area: header;
+        /*  height: 30px; */
+      }
+
+      aside {
+        background-color: rgb(105, 168, 105);
+        grid-area: aside;
+        /* height: 120px; */
+      }
+
+      main {
+        background-color: yellow;
+        grid-area: main;
+      }
+
+      div {
+        background-color: gray;
+        grid-area: div;
+      }
+
+      footer {
+        background-color: orange;
+        grid-area: footer;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        /*   grid-auto-rows: auto; */
+        grid-template-areas:
+          "header header"
+          "aside main"
+          "aside main"
+          "aside div"
+          "footer footer";
+        height: 400px;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <aside>Aside</aside>
+    <main>Main</main>
+    <div>Extra Content</div>
+    <footer>Footer</footer>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.Contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* pq 1fr ocupa lo mismo que 2fr??? */
+    height: 100%;
+   
+}
+.Tarjetas { background-image:url(imagenes/bg-main-desktop.png) ;
+   
+}
+
+.TarjetaFrente {
+    background-image: url(imagenes/bg-card-front.png);
+    background-repeat: no-repeat;
+    width: 24.5rem;
+    height: 13.5rem;
+    border-radius: 10px;
+    margin-right: auto;
+    position: absolute;
+}
+  .TarjetaDorso {
+  object-fit: contain;
+position: absolute;
+top: 400px;
+left: 250px;
+
+  }
+  .Formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  form {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+fieldset {
+    border: none;
+}
+.tercercampo {
+    display: flex;
+    flex-direction: row;  
+} 
+
+ button {
+    margin: auto;
+        background-color: rgb(92, 92, 195);
+        color: rgb(1, 1, 17);
+        font-size: medium;
+        width: 10rem;
+  }

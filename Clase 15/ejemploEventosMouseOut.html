@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="test">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <script>
+      const test = document.getElementById("test");
+
+      /*   test.addEventListener(
+        "mouseleave",
+        (event) => {
+          event.target.style.color = "purple";
+
+          setTimeout(() => {
+            event.target.style.color = "";
+          }, 1000);
+        },
+        false
+      ); */
+
+      test.addEventListener(
+        "mouseout",
+        (event) => {
+          event.target.style.color = "orange";
+
+          setTimeout(() => {
+            event.target.style.color = "";
+          }, 500);
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
+<!-- window.open(): se puede utilizar tanto para abrir una nueva pestaña en el navegador 
+como para abrir una nueva ventana.
+window.close(): se puede utilizar tanto para cerrar la ventana abierta por el window.open() 
+como para cerrar la ventana en primer plano.
+window.location() sirve para: devolver el href (URL) de la página actual, 
+devolver el nombre de dominio del servidor web, devolver la ruta y el nombre de archivo
+ de la página actual, devolver el protocolo web utilizado (http: o https:), 
+ cargar un nuevo documento. -->

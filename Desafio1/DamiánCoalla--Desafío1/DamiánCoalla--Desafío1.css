@@ -1,0 +1,253 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contenedor {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    
+  }
+  .front-back {
+  
+    background-image: url(bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 35%;
+
+
+  }
+  .front-back img {
+    max-width: 100%;
+  }
+  .front {
+    align-self: start;
+    margin-top: -64px;
+    max-width: 85%;
+    order: 2;
+    position: relative;
+    z-index: 1;
+  }
+  .detalles-front {
+    align-items: start;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    inset: 0;
+    position: absolute;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+  .detalles-front div {
+    width: 100%;
+  }
+
+  .detalles-front img {
+    max-width: 2.5rem;
+  }
+  .numerostarjeta {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .datosfrente {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    width: 100%;
+    flex-direction: row;
+  }
+  .back {
+    position: relative;
+    max-width: 85%;
+    align-self: end;
+    order: 1;
+  }
+  .back img {
+    max-width: 100%;
+  }
+
+  .CVC {
+    display: flex;
+    position: absolute;
+    inset: 0;
+    color: white;
+    align-items: center;
+    justify-content: end;
+    padding-right: 2.5rem;
+  }
+
+  .etiqueta {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    color: hsl(278, 68%, 11%);
+    border-radius: 30px;
+  }
+  .campo {
+    border-radius: 4px;
+    height: 2.1rem;
+    font-size: 14px;
+    font-family: "Space Grotesk", sans-serif;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    padding-left: 10%;
+    width: 70%;
+    outline: none;
+
+    /* COMO HAGO PARA QUE LOS PLACEHOLDER QUEDEN ALINEADOS A LA DERECHA??? */
+  }
+
+  .campo:focus {
+    background: hsl(270, 29%, 55%);
+  }
+  .campoCVC:focus {
+    background: hsl(270, 29%, 55%);
+  }
+  .campo::placeholder {
+    color: hsl(270, 3%, 87%);
+  }
+  .campoCVC::placeholder {
+    color: hsl(270, 3%, 87%);
+  }
+  .datitos {
+    display: grid;
+    gap: 0 16px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .datosmesYanios {
+    display: flex;
+    gap: 10px;
+  }
+
+  .boton {
+    font-size: 14px;
+    font-family: "Space Grotesk", sans-serif;
+    height: 50px;
+    background-color: hsl(278, 68%, 11%);
+    letter-spacing: 2px;
+    color: white;
+    width: 80%;
+    border-radius: 7px;
+  }
+
+  .formulario {
+    display: flex;
+    justify-content: center;
+  }
+
+  .campoCVC {
+    width: 55%;
+    border-radius: 4px;
+    height: 2.1rem;
+    font-size: 14px;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  @media (min-width: 1440px) {
+    .contenedor {
+      background-image: url(imagenes/bg-main-desktop.png);
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 40%;
+      padding-bottom: 2rem;
+      display: flex;
+      flex: 1;
+      height: 100vh;
+      flex-direction: row;
+    }
+    .front-back {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+    .front {
+      align-self: start;
+      margin-top: 12rem;
+      margin-left: 20rem;
+      max-width: 85%;
+      order: 1;
+      position: relative;
+    }
+    .back {
+      position: relative;
+      max-width: 85%;
+      align-self: auto;
+      margin-left: 22rem;
+      margin-top: 3rem;
+      order: 2;
+      order: 2;
+      z-index: 1;
+    }
+    .back img {
+      max-width: 100%;
+    }
+
+    .formulario {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .campo {
+      border-radius: 4px;
+      height: 2.1rem;
+      font-size: 14px;
+      font-family: "Space Grotesk", sans-serif;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+      padding-left: 10px;
+      width: 45%;
+      outline: none;
+    }
+    .datitos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 57%;
+    }
+
+    .campoCVC {
+      width: 55%;
+      border-radius: 4px;
+      height: 2.1rem;
+      font-size: 14px;
+      font-family: "Space Grotesk", sans-serif;
+    }
+
+    .boton {
+      width: 47%;
+      height: 40px;
+    }
+
+    .formulariomargen {
+      display: flex;
+      margin-left: 10rem;
+      height: 30%;
+    }
+    .datosfrente {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      width: 100%;
+      flex-direction: row;
+    }
+
+    .numerostarjeta {
+      font-size: 16px;
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5px;
+    }
+  }

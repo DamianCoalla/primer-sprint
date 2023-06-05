@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--  A partir de una lista artículos que contienen objetos con nombre del artículo, stock y sus precios.
+    Crear una función precio(art) precio que lleva como argumento el nombre de un artículo y devuelve
+    el precio correspondiente. si el artículo no existe devolver
+    "Ese artículo no existe en nuestra base de datos".
+    Crear una función que obtenga el artículo de mayor precio.
+    Crear un función que obtenga el promedio de los precios de los artículos.
+    Crear una función que muestre la suma total del stock de todos los artículos de lista.
+    Permitir disminuir el stock de un artículo en particular y luego mostrar el resultado.
+    Validar que el stock siempre sea mayor al
+     valor ingresado. */ -->
+  </head>
+  <body>
+    <button onclick="precio()">ver articulos</button>
+    <script>
+      const articulos = [
+        { nombre: "leche", stock: 50, precio: 35 },
+        { nombre: "pan", stock: 59, precio: 50 },
+        { nombre: "miel", stock: 10, precio: 120 },
+        { nombre: "chocolate", stock: 200, precio: 78 },
+      ];
+
+      function precio() {
+        let articulo = prompt("ingrese el articulo que desea");
+
+        for (let i = 0; i < articulos.length; i++) {
+          if (articulo === articulos[i].nombre) {
+            return console.log(articulos[i].precio);
+          }
+        }
+        console.log("no existe en la bases de datos");
+      }
+      calculoMP();
+      function calculoMP() {
+        let mayorprecio = articulos[0];
+
+        for (let i = 0; i < articulos.length; i++) {
+          if (articulos[i].precio >= mayorprecio.precio) {
+            mayorprecio = articulos[i];
+          }
+        }
+        console.log("el articulo de mayor precio es " + mayorprecio.nombre);
+      }
+      promedio();
+
+      function promedio() {
+        let suma = 0;
+        for (let i = 0; i < articulos.length; i++) {
+          suma += articulos[i].precio;
+        }
+        console.log(suma / articulos.length);
+      }
+
+      stock();
+      function stock() {
+        let sumaS = 0;
+        for (let i = 0; i < articulos.length; i++) {
+          sumaS += articulos[i].stock;
+        }
+        console.log("el stock es de " + sumaS);
+      }
+
+      disminuir();
+      function disminuir() {
+        let articuloDisminuir = prompt(
+          "ingrese el articulo que quiere comprar"
+        );
+        let cantidadAdisminuir = +prompt("ingrese la cantidad");
+
+        let articulo = articulos.filter((x) => x.nombre === articuloDisminuir);
+        if (cantidadAdisminuir <= articulo[0].stock) {
+          articulo[0].stock = articulo[0].stock - cantidadAdisminuir;
+          console.log("la cantidad que queda es" + articulo[0].stock);
+        } else {
+          console.log("no hay suficiente stock");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--   Se cargan por teclado tres números distintos. 
+    Mostrar por pantalla el mayor de ellos. -->
+  </body>
+  <script>
+    let valor1 = +prompt("ingrese valor 1");
+    let valor2 = +prompt("ingrese un valor diferente al primero");
+    let valor3 = +prompt(
+      "ingrese un tercer valor diferente a los dos primeros"
+    );
+
+    if (valor1 > valor2 && valor1 > valor3) {
+      console.log("el valor mas alto es el primero =" + valor1);
+    } else if (valor2 > valor1 && valor2 > valor3) {
+      console.log("el valor mas alto es el segundo =" + valor2);
+    } else if (valor3 > valor1 && valor3 > valor2) {
+      console.log("el valor mas alto es el tercero =" + valor3);
+    } else {
+      console.log("te dije diferentes la puta que te pario");
+    }
+  </script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--   Se ingresan un conjunto de 5 alturas de personas por teclado.
+     Mostrar la altura promedio de las personas. -->
+
+    <script>
+      /*   const alturas = [];
+      let suma = 0;
+      for (let index = 0; index < 5; index++) {
+        alturas.push(+prompt("ingrese la altura de la persona " + (index + 1)));
+        suma += alturas[index];
+      }
+   
+      const promedio = suma / 5;
+      console.log("la altura promedio es", +promedio); */
+
+      let estatura;
+      estatura = 1;
+      let x = 0;
+      let suma = 0;
+      while (x < 5) {
+        let altura;
+        altura = parseInt(prompt("ingrese la estatura en centimetros (ej175"));
+        suma = suma + altura;
+        x = x + 1;
+      }
+      let promedio = suma / 5;
+      console.log("el promedio de estaturas es:" + promedio);
+    </script>
+  </body>
+</html>

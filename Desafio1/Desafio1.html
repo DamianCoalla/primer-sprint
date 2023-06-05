@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>desafio1</title>
+
+    <link rel="stylesheet" href="CSSdesafio.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <section class="tarjeta_section">
+          <div class="cardfront">
+            <img src="imagenes/card-logo.svg" alt="card_logo" />
+            <p class="numbers">9591 6489 6389 101E</p>
+            <div class="card_info">
+              <p class="cardfront_name">Felicia Leire</p>
+              <p>
+                <span class="cardexpirationMM">00</span>/
+                <span class="cardexpirationYY">00</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="padredelosceritos"></div>
+        </section>
+      </div>
+    </main>
+    <div class="ceritos">
+      <img src="imagenes/bg-card-back.png" alt="" />
+      <div class="ceritos2"><p class="ceritos">000</p></div>
+    </div>
+
+    <!-- <div>
+      <div><img src="imagenes/bg-main-desktop.png" alt="" /></div>
+      <div class="padredelosceritos">
+        <img src="imagenes/bg-card-back.png" alt="" />
+        <p class="ceritos">000</p>
+      </div>
+    </div> -->
+    <div>
+      <form>
+        <label for="input1"> CARDHOLDNUMBER </label><br />
+        <input
+          type="text"
+          placeholder="Felicia Leire"
+          id="input1"
+          required
+        /><br />
+        <label for="input2"> CARD NUMBER</label><br />
+        <input
+          type="text"
+          placeholder="9591 6489 6389 101E"
+          id="input2"
+        /><br />
+        <fieldset>
+          <legend>EXP. DATE (MM/YY)</legend>
+          <label for="MM">MM</label>
+          <input id="MM" name="MM" />
+
+          <label for="YY">YY</label>
+          <input id="YY" name="YY" />
+        </fieldset>
+
+        <label for="input5"> CVC</label><br />
+        <input type="text" placeholder="e.g. 123" name="" id="input5" /><br />
+
+        <button type="submit" value="submit">Confirm</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+  }
+  
+  .bloque1 {
+    background-color: darkgrey;
+  }
+  
+  .bloque2 {
+    background-color: darksalmon;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    gap: 20px;
+    margin: auto;
+  }
+  
+  .imagen {
+    width: 24.5rem;
+    height: 13.5rem;
+  }
+  
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .front {
+    background-image: url("interactive-card-form/imÃ¡genes/bg-card-front.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-right: auto;
+  }
+  
+  .back {
+    margin-left: auto;
+  }
+  
+  span {
+    color: white;
+    font-size: 18px;
+  }
+  
+  
+  
+  @media (max-width: 900px) {
+    .card {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .imagen {
+      width: 18rem;
+      height: 9.8rem;
+    }
+  
+    span {
+      font-size: 10px;
+    }
+  
+    .contenedor {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+    }
+  
+    .card {
+      display: grid;
+      grid-template-areas: "back"
+        "front";
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+    }
+  
+    .back {
+      grid-area: back;
+    }
+  
+    .front {
+      grid-area: front;
+    }
+  }

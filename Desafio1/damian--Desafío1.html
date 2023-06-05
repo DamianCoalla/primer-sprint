@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DamiánCoalla--Desafío1</title>
+    <link rel="stylesheet" href="DamiánCoalla--Desafío1.css" />
+  </head>
+
+  <body>
+    <section class="Contenedor">
+      <section class="Tarjetas">
+        <div class="TarjetaFrente">
+          <div class="Frente">
+            <span class="LogoTarjeta">
+              <img src="imagenes/card-logo.svg" alt="" /> </span
+            ><br />
+            <span>9591 6489 6389 101E</span>
+            <div>Felicia Leire 00/09</div>
+          </div>
+        </div>
+        <div class="TarjetaDorso">
+          <img src="imagenes/bg-card-back.png" alt="" />
+        </div>
+      </section>
+
+      <section class="Formulario">
+        <form>
+          <div class="primercampo">
+            <label for="input1"> CARDHOLDNUMBER </label><br />
+            <input
+              type="text"
+              placeholder="Felicia Leire"
+              id="input1"
+              required
+            />
+          </div>
+          <div class="segundocampo">
+            <label for="input2"> CARD NUMBER</label><br />
+            <input type="text" placeholder="9591 6489 6389 101E" id="input2" />
+          </div>
+          <br />
+          <legend>EXP. DATE (MM/YY)</legend>
+          <div class="tercercampo">
+            <fieldset>
+              <label for="MM"></label>
+              <input id="MM" placeholder="MM" name="MM" />
+              <label for="YY"></label>
+              <input id="YY" placeholder="YY" name="YY" />
+              <label for="input5"> CVC</label><br />
+              <input type="text" placeholder="e.g. 123" name="" id="input5" />
+            </fieldset>
+            <br />
+            <button type="submit" value="submit">Confirm</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </body>
+</html>

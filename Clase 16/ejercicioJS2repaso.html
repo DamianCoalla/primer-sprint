@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*   Dado el arreglo ['H', 'o', 'l','a', '!']
+                                          Imprimir todo el arreglo en una misma palabra
+                                          Agregar espacios entre las letras e imprimirlas nuevamente para que se lea 'H o l a !'
+                                          Repetir el A y B con el método de ciclos no utilizado anteriormente.  */
+
+      /*   let arreglo = ["H", "o", "l", "a", "!"];
+                                  let palabra =
+                                    arreglo[0] + arreglo[1] + arreglo[2] + arreglo[3] + arreglo[4];
+                                  console.log(palabra);
+
+                                  const palabraConEspacio = arreglo.join(" ");
+                                  console.log(palabraConEspacio);
+
+                                  let arreglo1 = ["H", "o", "l", "a", "!"];
+                                  let mensaje = "";
+                                  let mensajeConEspacio = "";
+
+                                  for (let i = 0; i < arreglo1.length; i++) {
+                                    mensaje += arreglo1[i];
+                                    mensajeConEspacio += arreglo1[i] + " ";
+                                  }
+                                  console.log(mensaje);
+                                  console.log(mensajeConEspacio);
+                             */
+      /*     Dado el arreglo [true, 'hola', 4, null]
+                            Implementar una función por cada item y probarlo con arreglo de ejemplo
+                            Imprimir el tercer elemento del arreglo
+                            Cambiar el último valor por un 3
+                            Remover los ultimos dos elementos
+                            Agregar un 6 y un 'chau' al final
+                            Insertar en la tercera posición del arreglo un 5 */
+
+      /*       let arreglo = [true, "hola", 4, null];
+                                  console.log(arreglo[2]);
+
+                                  arreglo[3] = 3;
+                                  console.log(arreglo);
+
+                                  arreglo.pop();
+                                  arreglo.pop();
+                                  console.log(arreglo);
+
+                                  arreglo.push(6, "chau");
+                                  console.log(arreglo); */
+
+      /*  Rellena un array(arreglo) con los números del 1 al 10.
+                                  Al finalizar muéstralo por consola */
+
+      /* let array = [];
+                                  for (let i = 1; i <= 10; i++) {
+                                    array.push(i);
+                                  }
+                                  console.log(array); */
+
+      /*    Rellena un array con números aleatorios. Muéstralo por consola
+                            Nota: investiga Math.floor() y Math.random() para que sirven  */
+
+      function ejercicio2() {
+        let array = [];
+
+        for (let i = 0; i < 10; i++) {
+          array.push(Math.floor(Math.random() * 10));
+        }
+
+        console.log(array);
+
+        /*  Del array anterior, créale una copia (debe ser otro array exactamente con los mismos valores).
+                            Muéstralo en consola
+                              Nota: Investiga sobre array.slice()  */
+
+        let array1 = array.slice();
+        console.log(array1);
+      }
+
+      /*   Genera un array de números aleatorios, ordénalos de menor a mayor y muéstrales en consola */
+
+      function ejercicio3() {
+        let array = [];
+        for (let i = 0; i < 10; i++) {
+          array.push(Math.floor(Math.random() * 10));
+        }
+
+        array.sort(function (a, b) {
+          return a - b;
+        });
+
+        console.log(array);
+      }
+
+      /* Mira a tu alrededor y escoge 6 cosas de tu entorno(libro, sillas, tasa, etc.).
+                            Una vez elegidas, crea objetos JS que puedan simularlos y guardar sus características. */
+
+      function ejercicioO1() {
+        let array = ["silla", "mate"];
+        let silla = {
+          color: "verde",
+          tamaño: "grande",
+        };
+        let mate = {
+          color: "marron",
+          tamaño: "chico",
+        };
+
+        console.log(array);
+      }
+
+      /*   Para este ejercicio contamos con un objeto literal deportista ya definido,
+                           que tiene los siguientes atributos: nombre, energía, experiencia.
+                           Queremos poder pedirle al deportista que entrene.
+                           Para esto, nuestro trabajo va a ser completar la función entrenarHoras.
+                           La función entrenarHoras tiene las siguientes tres características:
+                           Recibe por parámetro la cantidad de horas. Resta a su energía (this.energia)
+                           la cantidad de horas x 5. Incrementa su experiencia (this.experiencia) la cantidad de horas x 2.
+                           Una vez definida la función, podemos ejecutar el código y ver cómo va variando la energía y
+                           experiencia del deportista por consola. */
+      /*
+                           let deportista = {
+                             energia: 100,
+                             experiencia: 10,
+                             nombre: "M. Jordan",
+                             entrenarHoras: function (horas) {
+                               this.energia -= horas * 5;
+                               this.experiencia += horas * 2;
+                             },
+                           };
+
+                           console.log(
+                             "Nombre " +
+                               deportista.nombre +
+                               " Energía: " +
+                               deportista.energia +
+                               " Experiencia: " +
+                               deportista.experiencia
+                           );
+
+                           let valor = +prompt(
+                             "Ingrese la cantidad de horas que el deportista va a entrenar"
+                           );
+
+                           deportista.entrenarHoras(valor);
+                           console.log("Energía restante: " + deportista.energia);
+                           console.log("Experiencia actual: " + deportista.experiencia); */
+
+      /*    Confeccionar una función que solicite la carga de dos enteros
+                            (primero el menor y luego el mayor) y nos muestre desde el menor hasta el mayor
+                            de uno en uno.
+
+                     Por ejemplo si ingresamos los valores 4 y 10 luego se debe mostrar por pantalla:
+                     	4 5 6 7 8 9 10
+                      */
+      /*  mostrarNumeros();
+                           function mostrarNumeros() {
+                             let menor = parseInt(prompt("Ingresa el número menor: "));
+                             let mayor = parseInt(prompt("Ingresa el número mayor: "));
+
+                             for (let i = menor; i <= mayor; i++) {
+                               console.log(i);
+                             }
+                           } */
+
+      /*       Elaborar una función a la cual le enviemos tres enteros y muestre el menor.
+       */
+      /*    function mostrarMenor(x, y, z) {
+                       let numeros = [x, y, z];
+                       return numeros.sort((a, b) => {
+                         return a - b;
+                       })[0];
+                     }
+
+                     let x = parseInt(prompt("Ingrese el primer número: "));
+                     let y = parseInt(prompt("Ingrese el segundo número: "));
+                     let z = parseInt(prompt("Ingrese el tercer número: "));
+
+                     console.log(
+                       "El menor de los números ingresados es: " + mostrarMenor(x, y, z)
+                     ); */
+
+      /*  Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados
+                     de menor a mayor. */
+      /*
+                  let x = prompt("ingrese 1er valor");
+                  let y = prompt("ingrese 2do valor");
+                  let z = prompt("ingrese 3er valor");
+
+                  let ordenados = [x, y, z];
+                  ordenados.sort(function (a, b) {
+                    return b - a;
+                  });
+                  console.log(ordenados); */
+
+      /*   Elaborar una función a la cual le envíe el valor del lado de un cuadrado
+                  y me retorne su perímetro. */
+      /*
+                  //definir la funcion
+            function hola(parametros) {
+              //lo que debe hacer la función
+              return parametros
+            }
+
+            //obs: los parametros y el retorno pueden obviarse */
+
+      /*    const lado = prompt("ingresar el lado de un cuadrado");
+                  const perimetroCuadrado = perimetro(lado);
+                  console.log(perimetroCuadrado);
+
+                  function perimetro(ladocuadrado) {
+                    return ladocuadrado * 4;
+                  } */
+
+      /* Desarrollar una función que retorne la cantidad de dígitos que tiene una
+                   variable entera positiva de hasta 5 dígitos. */
+
+      /*   let numero = +prompt("ingrese su numero");
+
+                  cantidadDigitos();
+                  function cantidadDigitos() {
+                    if (numero.toString().length <= 5) {
+                      console.log(numero.toString().length);
+                    } else {
+                      alert("Numero muy grande");
+                    }
+                  } */
+      /* Confeccionar una función que solicite la carga de 5 valores
+                  por teclado y retorne su suma. */
+
+      /*  let suma = 0;
+
+            sumaValores();
+            function sumaValores() {
+              for (let i = 0; i < 5; i++) {
+                let valores = +prompt("Ingrese numero entero:");
+                suma += valores;
+              }
+            }
+
+            console.log("la suma es " + suma); */
+
+      /*  Realizar una función que reciba un array que contiene strings.
+            Retornar un nuevo array numérico cuyos elementos sean las cantidades de caracteres de los strings del array original.
+
+      Ejemplo: si el array original recibido contenía
+      ["Hola", "celular", "ser", "exige"] se retornará el array [4,7,3,5]. */
+
+      /*  let array = ["hoja", "celular", "mate", "termo"];
+            function lartoitems() {
+              let nuevoarray = array.map(function (valor) {
+                return valor.length;
+              });
+              console.log(nuevoarray);
+            }
+            lartoitems(); */
+
+      /*   Crear una función que reciba como parámetro un array de números y
+             devuelva un nuevo array con los elementos que sean mayores o iguales al primero.  */
+
+      let array = [20, 55, 5, 8, 23];
+      function mayorque() {
+        let nuevoarray = array.filter(function (valor) {
+          return valor >= array[0];
+        });
+        console.log(nuevoarray);
+      }
+      mayorque();
+    </script>
+  </body>
+</html>

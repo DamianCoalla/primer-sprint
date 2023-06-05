@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+article /* CARDFRONT */
+ {
+    background-image:url(imagenes/bg-card-front.png);
+    background-repeat: no-repeat;
+    width: 24.5rem;
+    height: 13.5rem;
+    border-radius: 10px;
+    margin-top: 7rem;
+    margin-left: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "logo logo"
+    "numero numero" 
+    "nombre caducidad";
+   
+}
+
+.logo {grid-area: logo;
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 1.2rem;
+margin-left: 1.3rem;
+}
+
+.numero {grid-area: numero;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.9rem;
+color: white;
+}
+
+.nombre {grid-area: nombre;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+font-size: 1.3rem;
+color: white;
+margin-bottom: 1rem;
+margin-left: 1rem;
+}
+
+.caducidad {grid-area: caducidad;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: white;
+    margin-right: 1rem;
+}
+
+.cardback {
+    background-image: url(imagenes/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24.5rem;
+    height: 13.5rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+margin-top: 2rem;
+    margin-left: 29rem;
+}
+
+ span {
+    margin-left: 20rem;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row: 1fr;
+    grid-area: "tarjetas formulario";
+    height: 100vh;
+    width: 100vw; 
+    background-image: url(imagenes/bg-main-desktop.png);
+    background-repeat:no-repeat ;
+    background-size: 40%;
+ 
+}
+
+/* .tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: "tarjetas";
+    height: 100%;
+}
+ */
+body {
+    
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+ /*    height: 100vh;
+    width: 100vw; */
+    
+}
+
+.Formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.primercampo, .segundocampo {
+    display: flex;
+    flex-direction: column;
+}
+
+.filadecampos {
+    display: flex;
+flex-direction: row;
+width: 100%;
+
+}
+
+.CVC {
+    display: flex;
+    flex-direction: column;
+   margin-left: 30px;
+  
+}
+.meses {
+    display: flex;
+    flex-direction: column;
+ 
+}
+.anos {
+    flex-direction: column;
+    display: flex;
+}
+
+#MM {
+    width: 4rem;
+    border-radius: 5px;
+    padding: 5px;
+    gap:5px;
+}
+
+#YY {
+    width: 4rem;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#input1 {
+    width: 20rem;
+    border-radius: 5px;
+    padding: 5px;
+}
+#input2 {
+    width: 20rem;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+#input5 {
+    width: 8rem;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+input {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+button {
+    margin: auto;
+        background-color: rgb(92, 92, 195);
+        color: white;
+        font-size: medium;
+        width: 20rem;
+        border-radius: 5px;
+        height: 2rem;
+  }
+
+  @media (max-width: 375px) and (max-width: 600px) {
+    .contenedor {
+       /*  display: grid;
+        grid-template-columns: 1fr ;
+        grid-row: 1fr 1fr;
+        grid-area: "tarjetas"
+        " formulario";
+        height: 100vh;
+        width: 100vw;  */
+        background-image: url(imagenes/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-position:top ;
+        background-size: 100%;
+        padding-bottom: 2rem;
+    }
+/* article /* CARDFRONT */
+/*  {
+    background-image:url(imagenes/bg-card-front.png);
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 8rem;
+    border-radius: 10px;
+    margin-top: 7rem;
+    margin-left: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "logo logo"
+    "numero numero" 
+    "nombre caducidad";
+   
+}  */
+/* .numero {
+    grid-area: numero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    }
+
+    .nombre {grid-area: nombre;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 1rem;
+        color: white;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        }
+        
+
+    .caducidad {grid-area: caducidad;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: white;
+        margin-right: 1rem;
+    }
+
+    .cardback {
+        background-image: url(imagenes/bg-card-back.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 15rem;
+        height: 8rem;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        align-items: center;
+    margin-top: 2rem;
+        margin-left: 29rem;
+    }
+
+ */ /*    body {
+        background-image: url(imagenes/bg-main-mobile.png);
+        background-repeat:no-repeat ;
+        background-size: 40%;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        font-weight: 500; */
+     /*    height: 100vh;
+        width: 100vw; */
+        
+    
+    /* FALTA EL HOVER Y FOCUS A LOS BOTONOES */
+  
+}

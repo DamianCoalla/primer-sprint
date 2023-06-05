@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios J4 DOM</title>
+
+    <style>
+        #semaforo {
+            background-color: red;
+            display: block;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>1. Tres botones un mensaje!
+    </h3>
+    <p>Crear un formulario con tres botones con las leyendas "1", "2" y "3". Mostrar un mensaje indicando qué botón se
+        presionó.
+    </p>
+
+    <form>
+        <button type="submit" onclick="mostrarQueBoton(1)"> Botón 1 </button>
+        <button type="submit" onclick="mostrarQueBoton(2)"> Botón 2 </button>
+        <button type="submit" onclick="mostrarQueBoton(3)"> Botón 3 </button>
+    </form>
+
+    <h3>2. Caza de caracteres</h3>
+    <p>Solicitar que se ingrese el nombre y la clave de un usuario. Mostrar una ventana de alerta si en la clave se
+        ingresan menos de 7 caracteres o más de 20 (capturar el evento onBlur)</p>
+
+    <form>
+        <label for="nombre">Ingrese el nombre de usuario</label><br>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="contraseña">Ingrese la contraseña</label><br>
+        <input type="password" name="contraseña" id="contraseña" onBlur="comprobarContraseña()"><br>
+    </form>
+
+    <h3>4. Otra ventana (objeto window)</h3>
+    <p>Confeccionar una página que permita abrir otra ventana cuando se presiona un botón. Dicha ventana debe tener como
+        ancho 600 píxeles y alto 300 píxeles.</p>
+
+    <button id="abrirVentana">Abrir nueva ventana</button>
+
+    <h3>5. Un random</h3>
+    <p>Confeccionar una página que tenga un botón. Cuando se presione dicho botón generar un valor aleatorio entre 0 y
+        2. Si se genera el 0 llamar al webmail de Outlook, si se genera un 1 llamar a gmail en caso de generarse un 2
+        llamar a yahoo.
+        Para generar un valor aleatorio utilizar la función random del objeto Math.
+    </p>
+
+    <button id="abrirMail">Acceder al correo electrónico</button>
+
+    <h3>6. Una ventana de media altura</h3>
+    <p>Confeccionar un programa que al presionar un botón aparezca una ventana que ocupe todo el ancho del monitor y la
+        mitad de su altura.
+    </p>
+
+    <button id="ventanaMediaAltura">Abrir una nueva ventana</button>
+
+    <h3>7. Doble Click doble valor</h3>
+    <p>Realizar un programa que muestre en un div el número 2. Cada vez que se hace doble clic sobre el mismo duplicar
+        el valor contenido en el div.
+    </p>
+    <div id="duplicando">2</div>
+
+    <h3>8. Rojo Amarillo Rojo</h3>
+    <p>Elaborar un programa que muestre un div de color rojo. Cuando se presione cambiar el color a amarillo y luego de
+        soltar el botón del mouse volver a pintar de rojo.</p>
+
+    <div id="semaforo"></div>
+
+    <h3>9. Al estilo original</h3>
+    <p>Mostrar un elemento de tipo H1, luego cuando se ingrese con el mouse dentro del mismo cambiar el color a letra
+        roja y color de fondo amarillo, luego cuando se mueva la flecha del mouse fuera del elemento volver al color
+        original.</p>
+
+    <h1 id="original">PROBANDO MOUSE-ENTER Y MOUSE-LEAVE</h1>
+
+    <h3>10. Términos y condiciones</h3>
+    <p>Confeccionar un formulario que muestre un checkbox que cuando se tilde active un botón (el checkbox debe mostrar
+        un mensaje que diga : "Confirma los términos y condiciones?").</p>
+    <form>
+        <label>¿Confirma los términos y condiciones?</label>
+        <input type="checkbox" name="casillaChequeo" id="casillaChequeo">
+        <button type="submit" id="boton" disabled>ACCEDER</button>
+    </form>
+
+    <script>
+        /* Ejercicio 1 */
+        function mostrarQueBoton(numeroBoton) {
+            alert("Presionaste el botón " + numeroBoton);
+        }
+        /* Ejercicio 2 */
+        function comprobarContraseña() {
+            let contraseña = document.getElementById("contraseña").value;
+            if (contraseña.length < 7 || contraseña.length > 20) {
+                alert("La clave ingresada no es correcta. Debe tener entre 7 y 20 caracteres");
+            }
+        }
+        /* Ejercicio 3 */
+        window.onload = alert("La página se ha cargado");
+
+        /* Ejercicio 4 */
+        let abrirVentana = document.getElementById("abrirVentana");
+        abrirVentana.addEventListener("click", function abrirVentana() {
+            window.open("https://www.w3schools.com/jsref/met_win_open.asp", "", "width=600px , height=300px")
+        }
+        )
+
+        /* Ejercicio 5 */
+
+        let abrirMail = document.getElementById("abrirMail");
+        abrirMail.addEventListener("click", function abrirMail() {
+            let num = Math.random() * 3
+            num = parseInt(num);
+            if (num === 0) {
+                window.open("https://outlook.office.com/mail/");
+            }
+            else if (num === 1) {
+                window.open("https://accounts.google.com/");
+            }
+            else if (num === 2) {
+                window.open("https://login.yahoo.com/")
+            }
+        })
+
+        /* Ejercicio 6 */
+        let altura = window.screen.availHeight * 0.5;
+        let ancho = window.screen.availWidth;
+        let ventanaMediaAltura = document.getElementById("ventanaMediaAltura");
+        ventanaMediaAltura.addEventListener("click", function ventanaMediaAltura() {
+            window.open("", "", `width=${ancho},height=${altura}`);
+        })
+
+        /* Ejercicio 7 */
+        let duplicando = document.getElementById("duplicando");
+        duplicando.addEventListener("dblclick", function duplicarValor() {
+            duplicando.textContent *= 2;
+        }
+        )
+
+        /* Ejercicio 8 */
+
+        let semaforo = document.getElementById("semaforo");
+        semaforo.addEventListener("mousedown", function semaforoDown() {
+            semaforo.style.backgroundColor = "yellow";
+        });
+
+        semaforo.addEventListener("mouseup", function semaforoUp() {
+            semaforo.style.backgroundColor = "red";
+        });
+
+        /* Ejercicio 9 */
+
+        let original = document.getElementById("original");
+        original.addEventListener("mouseenter", function entra() {
+            original.style.color = "red";
+            original.style.backgroundColor = "yellow";
+        })
+        original.addEventListener("mouseleave", function sale() {
+            original.style.color = "";
+            original.style.backgroundColor = "";
+        })
+
+        /* Ejercicio 10 */
+
+        let casilla = document.getElementById("casillaChequeo");
+        let boton = document.getElementById("boton");
+
+        casilla.addEventListener("change", function activarBoton() {
+            boton.disabled = !this.checked;
+        })
+    </script>
+
+</body>
+
+</html>

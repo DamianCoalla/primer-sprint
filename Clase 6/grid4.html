@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 20% 40% 10% 10% 15% 1fr;
+      grid-template-rows: 1fr 2fr;
+      grid-template-areas:
+        "uno dos tres cuatro cinco seis"
+        "siete ocho ocho cuatro cinco seis";
+      gap: 5px;
+    }
+
+    .contenido {
+      border: 1px solid black;
+    }
+
+    .uno {
+      background-color: #d30557;
+      grid-area: uno;
+    }
+
+    .dos {
+      background-color: #00aba5;
+      grid-area: dos;
+    }
+
+    .tres {
+      background-color: #009a78;
+      grid-area: tres;
+    }
+
+    .cuatro {
+      background-color: #fe8860;
+      grid-area: cuatro;
+    }
+
+    .cinco {
+      background-color: #ea6601;
+      grid-area: cinco;
+    }
+
+    .seis {
+      background-color: #1a6d9f;
+      grid-area: seis;
+    }
+
+    .siete {
+      background-color: #5ac1fc;
+      grid-area: siete;
+    }
+
+    .ocho {
+      background-color: yellow;
+      grid-area: ocho;
+    }
+
+    .nueve {
+      background-color: red;
+      grid-area: nueve;
+    }
+  </style>
+
+  <body>
+    <section class="contenido uno"></section>
+    <section class="contenido dos"></section>
+    <section class="contenido tres"></section>
+    <section class="contenido cuatro"></section>
+    <section class="contenido cinco"></section>
+    <section class="contenido seis"></section>
+    <section class="contenido siete"></section>
+    <section class="contenido ocho"></section>
+  </body>
+</html>
